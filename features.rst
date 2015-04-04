@@ -5,13 +5,20 @@ Functionality
 -------------
 
 * Stable response from modem
+
+  .. image:: Figures/Stable.png
+
 * Query all information about embedded module
+
+  .. image:: Figures/Information.png
 
   + General information
   + Memory sizes
   + Firmware information
 
 * Queue of commands
+
+  .. image:: Figures/Queue.png
 
   + All commands added to one queue executed in the background thread
   + User can pause and resume commands, added to the queue
@@ -20,7 +27,12 @@ Functionality
   + When started automatic modem configuration, queue tab can be automatically selected (if not disabled)
 
 * Uploading firmware, using XModem protocol
+
+  .. image:: Figures/XModem.png
+
 * Automatic modem configuration
+
+  .. image:: Figures/Automate.png
 
   + Erase application
   + Write bootloader and firmware
