@@ -50,8 +50,16 @@ Usability
 ---------
 
 * Command autocompletion and suggestion based on input history
+
+  .. image:: Figures/Autocompletion.png
+
 * Localization of every UI element as well as status messages
+
+  .. image:: Figures/Localization.png
+
 * Remember all configured settings per sessions
+
+  .. image:: Figures/Settings.png
 
 Visuals
 -------
@@ -60,17 +68,33 @@ Visuals
 
 * Clean and filtered **Console window**
 
-    * Command timespan
-    * Colorful statuses in console
+  .. image:: Figures/Console.png
+
+  + Command timespan
+  + Colorful statuses in console
 
 * Raw serial **Monitor window**
 
-    * Keep all history until another port is used
+  .. image:: Figures/Monitor.png
+
+  + Keep all history until another port is used
 
 * Search through both console windows
+
+  .. image:: Figures/Search.png
+
 * Colorful and noticeable status boxes
+
+  .. image:: Figures/States.png
+
 * Flexible layout - windows are totally resizeable to any screen resolution, in-form splits are totally movable whenever you want. Also, you can show/hide information/console view (F11/F12)
+
+  .. image:: Figures/Resizeable.png
+     :width: 30em
+
 * Progressbar shows file uploading
+
+  .. image:: Figures/Uploading.png
 
 Keyboard shortcuts
 ------------------
