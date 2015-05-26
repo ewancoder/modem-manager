@@ -14,6 +14,7 @@
     <string>.\_build\htmlhelp\_images</string>
     <string>.\_build\htmlhelp\_static</string>
     <string>.\_build\htmlhelp\features.html</string>
+    <string>.\_build\htmlhelp\usage.html</string>
   </ArchivosAdicionales>
   <AbrirProyecto>false</AbrirProyecto>
   <DirectorioWeb>.\_build\htmlhelp\features-web</DirectorioWeb>
