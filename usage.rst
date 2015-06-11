@@ -95,12 +95,53 @@ Checkbox **"Save settings on exit"** :i:`6` is needed for saving settings and st
 
 And finally, button **"Reset defaults"** :i:`7` resets all configurations to its default values without possibility to return :)
 
-Updating application firmware
------------------------------
+.. _preparation:
 
-Before start using modem, you should configure APN for your simcard and install latest version of our application firmware.
+Preparation
+-----------
+
+Before start using modem, you need to prepare it for work. If you obtained clean modem without our latest application, or you wish to upgrade to the latest version and you haven't setup needed APN or other settings yet, you should do following:
+
+.. image:: Screens/Automatic.png
+
+:i:`1` Remap Application & Filesystem disk space (if you need it).
+
+:i:`2` Configure external (internet) APN for your simcard.
+
+:i:`3` Make sure needed checkboxes is checked.
+
+:i:`4` Check these if you want to update in-modem time and then refill information from modem.
+
+:i:`5` Finally click the **"Start"** button to get started. Then the queue (see :ref:`queue`) will be filled with needed commands and modem will proceed to setup.
+
+If you want to update firmware (or to download it the first time), click the **"Update from cloud"** :i:`6` button. The process of updating application from the cloud is tricky though, because you will probably run into errors and will need debug skills to proceed. If you encounter any errors, please proceed to :ref:`troubleshooting` area before contacting us.
+
+.. note::
+
+   APN MUST be configured at least once, because the procedure of APN configuration is also PATCHING modem for correct use.
 
 .. _configuration:
 
 Application configuration
 -------------------------
+
+When you go into **"Configuration"** tab
+
+.. _troubleshooting:
+
+Troubleshooting
+---------------
+
+Error occurs when trying updating from cloud
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If error occurred before ``at+wdss=1,1`` command is executed, it most likely happened because you have no SIM card installed. Please, check that you have SIM card installed and that your modem have reliable internet connection (correct APN is set).
+
+Also, make sure that your modem is patched (see :ref:`preparation`). APN must be configured at least once.
+
+Can't send command error is sometimes occurs, nothing helps unless application is restarted
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is major bug with USB communication and it can occur sometimes based on Windows configuration, drivers configuration and modem configuration. This is hardware related question and low-level COM communication question, which will not be resolved in close time.
+
+If you made your configuration in **"Configuration"** tab and then this error occured, you can just save whole configuration into XML file, restart application and load this configuration from XML file.
