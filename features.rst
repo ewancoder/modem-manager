@@ -96,6 +96,8 @@ Visuals
 
   .. image:: Figures/Uploading.png
 
+.. _key-shortcuts:
+
 Keyboard shortcuts
 ------------------
 
