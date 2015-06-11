@@ -29,8 +29,6 @@ Text field :i:`10` at the bottom allows to send AT commands explicitly into mode
 
    Search does not work incrementally: it just highlights all found matches so you can see them distinctly.
 
-But before you actually use program, you may wish to setup it for your demands. To do so, go to **"Settings"** tab at the top left corner. If you wish to skip settings chapter, go to :ref:`Updating firmware` section.
-
 .. _queue:
 
 Using queue
@@ -53,6 +51,8 @@ Button **"Pause/Resume"**  :i:`2` explicitely pause/resume queue. State of the q
 Button **"Repeat"** :i:`3` allows to repeat last failed AT-command if the queue is currently paused. This command is repeated in second queue, so this is just an automation around typing the same command again and again.
 
 Progressbar :i:`4` is needed for indicating progress of long events (such as downloading firmware or configuring lots of ports).
+
+But before you actually use program, you may wish to setup it for your demands. To do so, go to **"Settings"** tab at the top left corner. If you wish to skip settings chapter, go to :ref:`preparation` section.
 
 .. _settings:
 
@@ -125,7 +125,23 @@ If you want to update firmware (or to download it the first time), click the **"
 Application configuration
 -------------------------
 
-When you go into **"Configuration"** tab
+Configuring application only works if you have our application inside your modem (which is obvious).
+
+.. image:: Screens/Configuration1.png
+
+.. image:: Screens/Configuration2.png
+
+:i:`1` button fills information from modem.
+
+:i:`2` button fills information from XML config file. You can get such file with predefined settings and just load whole configuration from it.
+
+:i:`3` button saves current on-screen configuration into XML file for future use.
+
+:i:`4` button resets default configuration which is defined by the version of application you are using.
+
+:i:`5` button configures all on-screen configuration into modem.
+
+Reference manual for sections :i:`6` - :i:`13` will be added in future.
 
 .. _troubleshooting:
 
