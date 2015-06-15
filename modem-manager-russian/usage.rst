@@ -11,24 +11,23 @@
 
 Когда Вы первый раз откроете программу, Вы увидите следующее окно.
 
-.. image:: Screens/MainForm.png
+.. image:: ../Screens/MainForm.png
 
 При запуске, все доступные в системе порты обновляются и добавляются в список портов :i:`1`. Вы можете вручную обновить список доступных портов, после добавления новых устройств, нажатием кнопки **"Открыть порт"** :i:`2`.
 
 После выбора необходимого порта, выберите (или введите) необходимую скорость передачи данных (baud rate) для выбранного устройства :i:`3`. Установите флажок **"Заполнить автоматически"** :i:`4` если Вы хотите чтобы программа заполнила информацию о модеме автоматически при подключении к устройству. Также в любой момент можно сделать это вручную используя кнопку **"Заполнить информацию"** :i:`5`. Тот же результат может быть получен нажатием горячей клавиши :s:`F5` (обновить информацию, см. :ref:`key-shortcuts`).
 
-Нажмите 
-Click **"Open port"** :i:`6` button to start communication. If port has been successfully opened, status indicator :i:`7` will turn green. This status indicator could be 3 different colors: red for closed, green for opened, blue for *"downloading mode"*.
+Для подключения к модему нажмите кнопку **"Открыть порт"** :i:`6`. Если порт был успешно открыт, индикатор текущего статуса :i:`7` станет зелёным. Индикатор статуса может быть трех разных цветов: красный при закрытом порту, зелёный - при открытом, синий - в режиме *"загрузки"*.
 
-There's console view at the bottom of the window. Left view :i:`8` is for pretty status messages and filtered AT-command results, where right view :i:`9` is raw COM (serial) monitor which displays all that present in COM connection.
+В нижней части окна располагается консольный монитор. Левая :i:`8` часть отвечает за красивые статусные сообщения и фильтрованный вывод AT-команд, правая :i:`9` часть является монитором последовательного COM-соединения и отображает всё что попадает в COM-порт.
 
-Text field :i:`10` at the bottom allows to send AT commands explicitly into modem and text field **"Search"** :i:`11` allows to search through both console windows.
+Текстовое поле :i:`10` в самом низу позволяет слать AT-команды модему напрямую. Текстовое поле :i:`11` осуществляет поиск по обоим консольным окнам.
 
 .. image:: Screens/Search.png
 
 .. note::
 
-   Search does not work incrementally: it just highlights all found matches so you can see them distinctly.
+   Поиск работает не инкрементально: он лишь подсвечивает все совпадения для удобного просмотра результатов.
 
 .. _queue:
 
