@@ -13,7 +13,7 @@ When you first open the program, you see main window.
 
 .. image:: Screens/MainForm.png
 
-At start, all available ports should be updated and filled in ports list :i:`1`. You can manually refresh them after inserting new devices by clicking **"Rescan"`** :i:`2` button.
+At start, all available ports available within OS should be updated and filled in ports list :i:`1`. You can manually refresh them after inserting new devices by clicking **"Rescan"`** :i:`2` button.
 
 After choosing needed port, select (or input) serial port speed (baud rate) for given device :i:`3`. Check or uncheck **"Fill automatically"** :i:`4` checkbox: if it is checked, all information about modem will be filled automatically after you have connected to modem. You can also fill information manually using **"Fill information"** :i:`5` button. The same result could be achieved by using :s:`F5` key (refresh information, see :ref:`key-shortcuts`).
 
