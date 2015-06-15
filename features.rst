@@ -1,136 +1,136 @@
 Возможности
 ===========
 
-Functionality
--------------
+Функциональность
+----------------
 
-* Stable response from modem
+* Стабильная связь с модемом
 
   .. image:: Figures/Stable.png
 
-* Query all information about embedded module
+* Полная информация о модеме
 
   .. image:: Figures/Information.png
 
-  + General information
-  + Memory sizes
-  + Firmware information
+  + Общая информация
+  + Информация о памяти
+  + Информация о прошивке
 
-* Queue of commands
+* Очередь команд
 
   .. image:: Figures/Queue.png
 
-  + All commands added to one queue executed in the background thread
-  + User can pause and resume commands, added to the queue
-  + Queue can be automatically stopped when an error occur (if configured)
-  + There is a list of current commands in the queue. Currently running command is highlighted
-  + When started automatic modem configuration, queue tab can be automatically selected (if not disabled)
+  + Все команды добавляются в общую очередь, работающую на заднем плане
+  + Пользователи могут приостанавливать и продолжать команды, добавленные в очередь
+  + Очередь может автоматически останавливаться при возникновении ошибок (если настроено)
+  + Список текущих команд в очереди отображается на экране. Текущая команда подсвечивается другим цветом
+  + Когда автоматическая настройка модема начата, вкладка с очередью автоматически открывается для просмотра
 
-* Uploading firmware, using XModem protocol
+* Загрузка прошивки используя XModem-протокол
 
   .. image:: Figures/XModem.png
 
-* Automatic modem configuration
+* Автоматическая конфигурация модема
 
   .. image:: Figures/Automate.png
 
-  + Erase application
-  + Write bootloader and firmware
-  + Remap memory
+  + Стереть приложение
+  + Запись загрузчика и прошивки
+  + Разбивка памяти
 
-    - Choose both AD and FS sizes, then let automatic mapper do the work for you
-    - Minimal size of AD aread is 256 MiB (for safety)
-    - Visual view of mapped areas
+    - Выбор разделов приложения и файловой системы, автоматическая разбивка после
+    - Минимальный размер раздела памяти под приложение составляет 256 КиБ (для защиты)
+    - Визуальное отображение распределённой памяти
 
-  + Write application
-  + Prepare modem for remote firmware writing
-  + Sync time
+  + Запись приложения
+  + Подготовка модема к удалённой прошивке
+  + Синхронизация времени
 
-Usability
----------
+Удобство
+--------
 
-* Command autocompletion and suggestion based on input history
+* Автодополнение команд с всплывающим списком истории
 
   .. image:: Figures/Autocompletion.png
 
-* Localization of every UI element as well as status messages
+* Локализация всех графических элементов, статус-сообщений и т. п.
 
   .. image:: Figures/Localization.png
 
-* Remember all configured settings per sessions
+* Сохранение всех настроек между сессиями
 
   .. image:: Figures/Settings.png
 
-Visuals
--------
+Визуальный стиль
+----------------
 
 .. image:: Figures/Overall.png
 
-* Clean and filtered **Console window**
+* Чистое и фильтрованное **окно консоли**.
 
   .. image:: Figures/Console.png
 
-  + Command timespan
-  + Colorful statuses in console
+  + Дата выполнение команды
+  + Цветные статусы в консоли
 
-* Raw serial **Monitor window**
+* Улавливающее всё **окно COM-монитора**
 
   .. image:: Figures/Monitor.png
 
-  + Keep all history until another port is used
+  + Содержит всю историю команд пока порт открыт
 
-* Search through both console windows
+* Поиск по обоим консольным окнам
 
   .. image:: Figures/Search.png
 
-* Colorful and noticeable status boxes
+* Цветные и заметные статус-индикаторы
 
   .. image:: Figures/States.png
 
-* Flexible layout - windows are totally resizeable to any screen resolution, in-form splits are totally movable whenever you want. Also, you can show/hide information/console view (F11/F12)
+* Гибкий дизайн - окна полностью растягиваемы и сжимаемы, совместимы с любыми разрешениями экранов, внутренние разделители позволяют раздвигать элементы для большей гибкости. Также, можно показать/скрыть некоторые окна горячими клавишами (F11/F12).
 
   .. image:: Figures/Resizeable.png
      :width: 30em
 
-* Progressbar shows file uploading
+* Индикатор прогресса показывает процесс загрузки файла
 
   .. image:: Figures/Uploading.png
 
 .. _key-shortcuts:
 
-Keyboard shortcuts
-------------------
+Горячие клавиши
+---------------
 
-Global:
+Общие:
 
-+--------+------------------------------+
-| F11    | Hide / show **Main** view    |
-+--------+------------------------------+
-| F12    | Hide / show **Console** view |
-+--------+------------------------------+
-| Ctrl-F | Focus search field           |
-+--------+------------------------------+
-| Ctrl-L | Clear console                |
-+--------+------------------------------+
-| Ctrl-S | Save all settings            |
-+--------+------------------------------+
++--------+---------------------------------------+
+| F11    | Скрыть / показать **главное** окно    |
++--------+---------------------------------------+
+| F12    | Скрыть / показать **консольное** окно |
++--------+---------------------------------------+
+| Ctrl-F | Перейти на поле поиска                |
++--------+---------------------------------------+
+| Ctrl-L | Очистить консоль                      |
++--------+---------------------------------------+
+| Ctrl-S | Сохранить все настройки               |
++--------+---------------------------------------+
 
-Command input field:
+Ввод AT-команд:
 
++--------+-----------------------------------+
+| Return | Послать команду                   |
++--------+-----------------------------------+
+| Ctrl-Z | Послать данные для загрузки (sub) |
 +--------+----------------------------------+
-| Return | Send command                     |
-+--------+----------------------------------+
-| Ctrl-Z | Send data in download mode (sub) |
-+--------+----------------------------------+
 
-Development
------------
+Разработка
+----------
 
 .. image:: Figures/Development.png
 
-* Clean code base and architecture
-* Minimal dependencies
-* Threading: all the work done in the background thread, UI does not freeze
-* Separate classes do separate work
-* Constructive comments for most code blocks
-* Code enclosed in #regions for clarity
+* Чистая кодовая база и архитектура
+* Минимальные зависимости
+* Мультипоточность: вся работа совершается в фоне, графический интерфейс не тормозит
+* Разные классы делают свою работу
+* Конструктивные комментарии для большинства блоков кода
+* Части кода закрыты в блоках региона #regions для удобства
