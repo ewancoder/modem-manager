@@ -98,7 +98,7 @@
 Подготовка к работе
 -------------------
 
-Before start using modem, you need to prepare it for work. If you obtained clean modem without our latest application, or you wish to upgrade to the latest version and you haven't setup needed APN or other settings yet, you should do following:
+Перед началом использования модема, необходимо подготовить его для работы. Если у Вас есть чистый модем без нашего приложения последней версии, или Вы желаете обновить приложение до последней версии, или не был настроен APN sim-карты, необходимо сделать следующее:
 
 .. image:: Screens/Automatic.png
 
