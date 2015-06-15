@@ -34,7 +34,7 @@ Text field :i:`10` at the bottom allows to send AT commands explicitly into mode
 Using queue
 -----------
 
-Whether you are using console input or automatized button which processes number of tasks, these tasks will be added into the queue of commands which you can see, pause, resume and repeat.
+Whether you are using console input or automatized button which processes number of tasks, these tasks will be added into the queue of commands which you can see, pause and resume. Also you can repeat last sent (unsuccessful) command.
 
 .. image:: ../Screens/Queue.png
 
@@ -42,7 +42,7 @@ Whether you are using console input or automatized button which processes number
 
    If you have **"Autofocus queue"** enabled in settings, this tab will be automatically opened when automatized sequence of commands is triggered (see :ref:`settings`).
 
-Here you can see list of commands that appeared after clicking **"Configure"** button (see :ref:`configuration`). Currently working command is highlighted by green color if it is AT-command and by blue color if it is a process which uses progressbar below (XModem uploading, analog/digital inputs configuration).
+Here you can see list of commands that appeared after starting modem application configuration (see :ref:`configuration`). Currently working command is highlighted by green color if it is AT-command and by blue color if it is a process which uses progressbar below (XModem uploading, analog/digital inputs configuration).
 
 Checkbox **"Autopause"** :i:`1` makes sure that if an error occurs when command is executed, whole queue would be paused and you will be notified of that. In most cases, this checkbox should be enabled.
 

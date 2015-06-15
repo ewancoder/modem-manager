@@ -31,18 +31,18 @@
 
 .. _queue:
 
-Using queue
------------
+Очередь команд
+--------------
 
-Whether you are using console input or automatized button which processes number of tasks, these tasks will be added into the queue of commands which you can see, pause, resume and repeat.
+При общении с модемом, будь то ручные команды или автоматическая кнопка настройки модема, AT-команды складываются в *"очередь"* команд. Очередь можно приостанавливать и возобнавлять, а также повторять последнюю (неудавшуюся) команду.
 
-.. image:: ../Screens/Queue.png
+.. image:: ../Screens/Queue-ru.png
 
 .. note::
 
-   If you have **"Autofocus queue"** enabled in settings, this tab will be automatically opened when automatized sequence of commands is triggered (see :ref:`settings`).
+   Если флажок **"Автоматически показывать очередь"** (в настройках) включен, вкладка очереди будет автоматически открыта когда автоматизированный набор команд будет запущен на исполнение (см. :ref:`settings`).
 
-Here you can see list of commands that appeared after clicking **"Configure"** button (see :ref:`configuration`). Currently working command is highlighted by green color if it is AT-command and by blue color if it is a process which uses progressbar below (XModem uploading, analog/digital inputs configuration).
+На скриншоте отображён список команд, появившихся после запуска конфигурирования приложения модема (см. :ref:`configuration`). Текущая работающая команда подсвечена зелёным цветом если это AT-команда, и синим цветом если это длительный процесс (загрузка прошивки по протоколу XModem, перенастройка аналоговых и цифровых входов).
 
 Checkbox **"Autopause"** :i:`1` makes sure that if an error occurs when command is executed, whole queue would be paused and you will be notified of that. In most cases, this checkbox should be enabled.
 
