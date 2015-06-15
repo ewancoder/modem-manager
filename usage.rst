@@ -61,42 +61,42 @@
 
 .. image:: Screens/Settings.png
 
-In listbox **"Application language"** :i:`2` you can choose whole application language between two languages (currently): english and russian. This localizes not only user interface, but also various status messages in console view.
+Выпадающий список **"Язык приложения"** :i:`2` позволяет выбрать язык всего приложения. Локализация включает не только перевод интерфейса, но также перевод всех сообщений, статусов и т. п. На текущий момент доступны два языка: английский и русский.
 
-In listbox **"AT autocompletion"** :i:`3` you can select autocompletion type for manual AT-command input from 4 different types:
+В списке **"Автодополнение"** :i:`3` можно выбрать тип автодополнения при вводе ручных AT-команд. Всего есть 4 типа дополнения:
 
 .. image:: Screens/Autocomplete.png
 
-:i:`8` - None
+:i:`8` - Нет
 
-:i:`9` - Suggest
+:i:`9` - Всплывающая подсказка
 
-:i:`10` - Append
+:i:`10` - Дополнение в строке
 
-:i:`11` - Suggest and append
+:i:`11` - Подсказка и дополнение
 
 .. note::
 
-   Autocompletion uses history of used AT-commands. There's no predefined list of commands.
+   Автодополнение использует историю вводимых команд. При запуске программы список пуст, т. е. автодополнения по всем AT-командам нету.
 
-Checkbox **"Autofocus queue"** :i:`4` does exactly what it promises to do: it focuses **"Queue"** tab (see :ref:`queue`) when automatized queue of commands is started, so that you can see whole queue coming and going.
+Флажок **"Автоматически показывать очередь"** :i:`4` делает именно то, что говорит: открывает вкладку **"Очередь"** при старте выполнения длинной очереди команд для того, чтобы Вы могли видеть что происходит в данный момент.
 
-**"Colorize COM monitor"** :i:`5` checkbox improves look and feel of raw COM monitor at the bottom right side of application. It actually colorized input based on some rules, like orange for "quoted text".
+Флажок **"Раскраска COM-монитора"** :i:`5` улучшает вид вывода монитора последовательного порта (справа снизу) путём раскраски "синтаксиса" отдельных частей, например оранжевый - для текста в кавычках.
 
 .. image:: Screens/ColorizedCOM.png
 
-Checkbox **"Save settings on exit"** :i:`6` is needed for saving settings and state of the application between sessions. If you want to start from current setup all the time, just uncheck this checkbox and if you change any settings, they will not remain after restart.
+Флажок **"Сохранить настройки при выходе"** :i:`6` необходим для сохранение всевозможных статусов и установленных настроек приложения между сессиями. Если Вы хотите запретить изменение настроек, снимите эту галочку и приложение будет начинать каждый раз с теми же настройками (текущими сохранёнными).
 
 .. warning::
 
-   The program will not save **"Save settings on exit"** option if it is unchecked. To explicitely save it you should use :s:`Ctrl` :s:`S` shortcut to manually save current settings (see :ref:`key-shortcuts`).
+   Программа не сохранит настройку **"Сохранять настройки при выходе"** если флажок снят. Чтобы намеренно сохранить эту настройку, используйте горячее сочетание клавиш :s:`Ctrl` :s:`S`, которое позволяет сохранять настройки в любой момент времени (см. :ref:`key-shortcuts`).
 
-And finally, button **"Reset defaults"** :i:`7` resets all configurations to its default values without possibility to return :)
+И, наконец, кнопка **"Сбросить настройки"** :i:`7` сбрасывает все возможные настроки на их стандартные значения без возможности возврата :)
 
 .. _preparation:
 
-Preparation
------------
+Подготовка к работе
+-------------------
 
 Before start using modem, you need to prepare it for work. If you obtained clean modem without our latest application, or you wish to upgrade to the latest version and you haven't setup needed APN or other settings yet, you should do following:
 
@@ -120,8 +120,8 @@ If you want to update firmware (or to download it the first time), click the **"
 
 .. _configuration:
 
-Application configuration
--------------------------
+Конфигурирование приложения модема
+----------------------------------
 
 Configuring application only works if you have our application inside your modem (which is obvious).
 
@@ -143,11 +143,11 @@ Reference manual for sections :i:`6` - :i:`13` will be added in future.
 
 .. _troubleshooting:
 
-Troubleshooting
----------------
+Проблемы и их решение
+---------------------
 
-Error occurs when trying updating from cloud
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+При попытке обновления из облака возникает ошибка
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If error occurred before ``at+wdss=1,1`` command is executed, it most likely happened because you have no SIM card installed. Please, check that you have SIM card installed and that your modem have reliable internet connection (correct APN is set).
 
