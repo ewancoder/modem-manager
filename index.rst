@@ -1,5 +1,5 @@
-Modem Manager Documentation
-===========================
+Документация Modem Manager
+==========================
 
 .. toctree::
    :maxdepth: 2

@@ -1,71 +1,71 @@
-Usage
-=====
+Использование
+=============
 
 .. role:: i
 .. role:: s
 
-.. contents::
+.. contents:: Содержание
 
-Starting communication
-----------------------
+Установка соединения
+--------------------
 
-When you first open the program, you see main window.
+Когда Вы первый раз откроете программу, Вы увидите следующее окно.
 
-.. image:: Screens/MainForm.png
+.. image:: ../Screens/MainForm-ru.png
 
-At start, all available ports available within OS should be updated and filled in ports list :i:`1`. You can manually refresh them after inserting new devices by clicking **"Rescan"`** :i:`2` button.
+При запуске, все доступные в системе порты обновляются и добавляются в список портов :i:`1`. Вы можете вручную обновить список доступных портов, после добавления новых устройств, нажатием кнопки **"Открыть порт"** :i:`2`.
 
-After choosing needed port, select (or input) serial port speed (baud rate) for given device :i:`3`. Check or uncheck **"Fill automatically"** :i:`4` checkbox: if it is checked, all information about modem will be filled automatically after you have connected to modem. You can also fill information manually using **"Fill information"** :i:`5` button. The same result could be achieved by using :s:`F5` key (refresh information, see :ref:`key-shortcuts`).
+После выбора необходимого порта, выберите (или введите) необходимую скорость передачи данных (baud rate) для выбранного устройства :i:`3`. Установите флажок **"Заполнить автоматически"** :i:`4` если Вы хотите чтобы программа заполнила информацию о модеме автоматически при подключении к устройству. Также в любой момент можно сделать это вручную используя кнопку **"Заполнить информацию"** :i:`5`. Тот же результат может быть получен нажатием горячей клавиши :s:`F5` (обновить информацию, см. :ref:`key-shortcuts`).
 
-Click **"Open port"** :i:`6` button to start communication. If port has been successfully opened, status indicator :i:`7` will turn green. This status indicator could be 3 different colors: red for closed, green for opened, blue for *"downloading mode"*.
+Для подключения к модему нажмите кнопку **"Открыть порт"** :i:`6`. Если порт был успешно открыт, индикатор текущего статуса :i:`7` станет зелёным. Индикатор статуса может быть трех разных цветов: красный при закрытом порту, зелёный - при открытом, синий - в режиме *"загрузки"*.
 
-There's console view at the bottom of the window. Left view :i:`8` is for pretty status messages and filtered AT-command results, where right view :i:`9` is raw COM (serial) monitor which displays all that present in COM connection.
+В нижней части окна располагается консольный монитор. Левая :i:`8` часть отвечает за красивые статусные сообщения и фильтрованный вывод AT-команд, правая :i:`9` часть является монитором последовательного COM-соединения и отображает всё что попадает в COM-порт.
 
-Text field :i:`10` at the bottom allows to send AT commands explicitly into modem and text field **"Search"** :i:`11` allows to search through both console windows.
+Текстовое поле :i:`10` в самом низу позволяет слать AT-команды модему напрямую. Текстовое поле :i:`11` осуществляет поиск по обоим консольным окнам.
 
-.. image:: Screens/Search.png
+.. image:: ../Screens/Search.png
 
 .. note::
 
-   Search does not work incrementally: it just highlights all found matches so you can see them distinctly.
+   Поиск работает не инкрементально: он лишь подсвечивает все совпадения для удобного просмотра результатов.
 
 .. _queue:
 
-Using queue
------------
+Очередь команд
+--------------
 
-Whether you are using console input or automatized button which processes number of tasks, these tasks will be added into the queue of commands which you can see, pause and resume. Also you can repeat last sent (unsuccessful) command.
+При общении с модемом, будь то ручные команды или автоматическая кнопка настройки модема, AT-команды складываются в *"очередь"* команд. Очередь можно приостанавливать и возобнавлять, а также повторять последнюю (неудавшуюся) команду.
 
-.. image:: Screens/Queue.png
+.. image:: ../Screens/Queue-ru.png
 
 .. note::
 
-   If you have **"Autofocus queue"** enabled in settings, this tab will be automatically opened when automatized sequence of commands is triggered (see :ref:`settings`).
+   Если флажок **"Автоматически показывать очередь"** (в настройках) включен, вкладка очереди будет автоматически открыта когда автоматизированный набор команд будет запущен на исполнение (см. :ref:`settings`).
 
-Here you can see list of commands that appeared after starting modem application configuration (see :ref:`configuration`). Currently working command is highlighted by green color if it is AT-command and by blue color if it is a process which uses progressbar below (XModem uploading, analog/digital inputs configuration).
+На скриншоте отображён список команд, появившихся после запуска конфигурирования приложения модема (см. :ref:`configuration`). Текущая работающая команда подсвечена зелёным цветом если это AT-команда, и синим цветом если это длительный процесс (загрузка прошивки по протоколу XModem, перенастройка аналоговых и цифровых входов).
 
-Checkbox **"Autopause"** :i:`1` makes sure that if an error occurs when command is executed, whole queue would be paused and you will be notified of that. In most cases, this checkbox should be enabled.
+Флажок **"Автопауза"** :i:`1` отвечает за приостановку очереди в случае возникновения ошибок при выполнении команды. В большинстве сценариев, этот влажок должен быть активен.
 
-Button **"Pause/Resume"**  :i:`2` allows to manually pause/resume queue. If the queue is paused, you can still input new AT commands which will be immediately executed in second (parallel) queue which is always working in non-pausing mode for this case specially.
+Кнопка **"Пауза/Продолжить"** :i:`2` позволяет вручную приостановить/возобновить очередь. Если очередь приостановлена, Вы всё ещё можете посылать модему AT-команды, которые будут выполнены сразу же после ввода в параллельной (другой) очереди, работающей без остановок специально для этого применения.
 
-Button **"Repeat"** :i:`3` allows to repeat last (failed) AT-command if the queue is currently paused. This command is executed in second queue, so this is just an automation around typing the same command again and again.
+Кнопка **"Повторить"** :i:`3` позволяет повторить последнюю (неудавшуюся) AT-команду если очередь в данный момент приостановлена. Эта команда исполняется в параллельной очереди, позволяя заменить ввод одной и той же команды вручную.
 
-Progressbar :i:`4` is needed for indicating progress of long events (such as downloading firmware or configuring lots of ports).
+Индикатор состояния :i:`4` нужен для отображения прогресса долгих событий (таких как загрузка прошивки или перенастройка большого количества портов).
 
 .. _settings:
 
-ModemManager settings
----------------------
+Настройки ModemManager
+----------------------
 
-For more comfortable look and feel you may wish to setup it for your demands. To do so, go to **"Settings"** :i:`1` tab. If you wish to skip settings chapter, go to :ref:`preparation` section.
+Для более комфортной работы с программой Вы можете настроить её удовлетворяющим Вас образом. Для этого перейдите на вкладку **"Настройки"** :i:`1`. Если Вы желаете пропустить часть по настройке программы, можете перейти к части :ref:`preparation`.
 
-.. image:: Screens/Settings.png
+.. image:: ../Screens/Settings-ru.png
 
 In listbox **"Application language"** :i:`2` you can choose whole application language between two languages (currently): english and russian. This localizes not only user interface, but also various status messages in console view.
 
 In listbox **"AT autocompletion"** :i:`3` you can select autocompletion type for manual AT-command input from 4 different types:
 
-.. image:: Screens/Autocomplete.png
+.. image:: ../Screens/Autocomplete.png
 
 :i:`8` - None
 
@@ -83,7 +83,7 @@ Checkbox **"Autofocus queue"** :i:`4` does exactly what it promises to do: it fo
 
 **"Colorize COM monitor"** :i:`5` checkbox improves look and feel of raw COM monitor at the bottom right side of application. It actually colorized input based on some rules, like orange for "quoted text".
 
-.. image:: Screens/ColorizedCOM.png
+.. image:: ../Screens/ColorizedCOM.png
 
 Checkbox **"Save settings on exit"** :i:`6` is needed for saving settings and state of the application between sessions. If you want to start from current setup all the time, just uncheck this checkbox and if you change any settings, they will not remain after restart.
 
@@ -100,7 +100,7 @@ Preparation
 
 Before start using modem, you need to prepare it for work. If you obtained clean modem without our latest application, or you wish to upgrade to the latest version and you haven't setup needed APN or other settings yet, you should do following:
 
-.. image:: Screens/Automatic.png
+.. image:: ../Screens/Automatic.png
 
 :i:`1` Remap Application & Filesystem disk space (if you need it).
 
@@ -125,9 +125,9 @@ Application configuration
 
 Configuring application only works if you have our application inside your modem (which is obvious).
 
-.. image:: Screens/Configuration1.png
+.. image:: ../Screens/Configuration1.png
 
-.. image:: Screens/Configuration2.png
+.. image:: ../Screens/Configuration2.png
 
 :i:`1` button fills information from modem.
 
