@@ -46,20 +46,18 @@ Here you can see list of commands that appeared after starting modem application
 
 Checkbox **"Autopause"** :i:`1` makes sure that if an error occurs when command is executed, whole queue would be paused and you will be notified of that. In most cases, this checkbox should be enabled.
 
-Button **"Pause/Resume"**  :i:`2` explicitely pause/resume queue. State of the queue will be printed in console view (bottom left). If the queue is paused, you can still input new AT commands which will be immediately executed in second (parallel) queue which is always working in non-pausing mode for this case specially.
+Button **"Pause/Resume"**  :i:`2` allows to manually pause/resume queue. If the queue is paused, you can still input new AT commands which will be immediately executed in second (parallel) queue which is always working in non-pausing mode for this case specially.
 
-Button **"Repeat"** :i:`3` allows to repeat last failed AT-command if the queue is currently paused. This command is repeated in second queue, so this is just an automation around typing the same command again and again.
+Button **"Repeat"** :i:`3` allows to repeat last (failed) AT-command if the queue is currently paused. This command is executed in second queue, so this is just an automation around typing the same command again and again.
 
 Progressbar :i:`4` is needed for indicating progress of long events (such as downloading firmware or configuring lots of ports).
-
-But before you actually use program, you may wish to setup it for your demands. To do so, go to **"Settings"** tab at the top left corner. If you wish to skip settings chapter, go to :ref:`preparation` section.
 
 .. _settings:
 
 ModemManager settings
 ---------------------
 
-Before using the program, you may wish to setup it for your demands. To do so, go to **"Settings"** :i:`1` tab.
+For more comfortable look and feel you may wish to setup it for your demands. To do so, go to **"Settings"** :i:`1` tab. If you wish to skip settings chapter, go to :ref:`preparation` section.
 
 .. image:: ../Screens/Settings.png
 

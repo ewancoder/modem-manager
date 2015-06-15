@@ -44,24 +44,22 @@
 
 На скриншоте отображён список команд, появившихся после запуска конфигурирования приложения модема (см. :ref:`configuration`). Текущая работающая команда подсвечена зелёным цветом если это AT-команда, и синим цветом если это длительный процесс (загрузка прошивки по протоколу XModem, перенастройка аналоговых и цифровых входов).
 
-Checkbox **"Autopause"** :i:`1` makes sure that if an error occurs when command is executed, whole queue would be paused and you will be notified of that. In most cases, this checkbox should be enabled.
+Флажок **"Автопауза"** :i:`1` отвечает за приостановку очереди в случае возникновения ошибок при выполнении команды. В большинстве сценариев, этот влажок должен быть активен.
 
-Button **"Pause/Resume"**  :i:`2` explicitely pause/resume queue. State of the queue will be printed in console view (bottom left). If the queue is paused, you can still input new AT commands which will be immediately executed in second (parallel) queue which is always working in non-pausing mode for this case specially.
+Кнопка **"Пауза/Продолжить"** :i:`2` позволяет вручную приостановить/возобновить очередь. Если очередь приостановлена, Вы всё ещё можете посылать модему AT-команды, которые будут выполнены сразу же после ввода в параллельной (другой) очереди, работающей без остановок специально для этого применения.
 
-Button **"Repeat"** :i:`3` allows to repeat last failed AT-command if the queue is currently paused. This command is repeated in second queue, so this is just an automation around typing the same command again and again.
+Кнопка **"Повторить"** :i:`3` позволяет повторить последнюю (неудавшуюся) AT-команду если очередь в данный момент приостановлена. Эта команда исполняется в параллельной очереди, позволяя заменить ввод одной и той же команды вручную.
 
-Progressbar :i:`4` is needed for indicating progress of long events (such as downloading firmware or configuring lots of ports).
-
-But before you actually use program, you may wish to setup it for your demands. To do so, go to **"Settings"** tab at the top left corner. If you wish to skip settings chapter, go to :ref:`preparation` section.
+Индикатор состояния :i:`4` нужен для отображения прогресса долгих событий (таких как загрузка прошивки или перенастройка большого количества портов).
 
 .. _settings:
 
-ModemManager settings
----------------------
+Настройки ModemManager
+----------------------
 
-Before using the program, you may wish to setup it for your demands. To do so, go to **"Settings"** :i:`1` tab.
+Для более комфортной работы с программой Вы можете настроить её удовлетворяющим Вас образом. Для этого перейдите на вкладку **"Настройки"** :i:`1`. Если Вы желаете пропустить часть по настройке программы, можете перейти к части :ref:`preparation`.
 
-.. image:: ../Screens/Settings.png
+.. image:: ../Screens/Settings-ru.png
 
 In listbox **"Application language"** :i:`2` you can choose whole application language between two languages (currently): english and russian. This localizes not only user interface, but also various status messages in console view.
 
