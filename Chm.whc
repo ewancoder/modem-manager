@@ -7,7 +7,7 @@
   <DirectorioDestino>.\_build\htmlhelp\features-project</DirectorioDestino>
   <HtmlCabecera />
   <HtmlPie />
-  <TituloAyuda>Modem Manager Documentation</TituloAyuda>
+  <TituloAyuda>Modem Manager Документация</TituloAyuda>
   <NivelCorte>0</NivelCorte>
   <GenerarWeb>false</GenerarWeb>
   <ArchivosAdicionales>
