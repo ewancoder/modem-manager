@@ -129,17 +129,17 @@
 
 .. image:: Screens/Configuration2.png
 
-:i:`1` button fills information from modem.
+:i:`1` - заполнить информацию из модема.
 
-:i:`2` button fills information from XML config file. You can get such file with predefined settings and just load whole configuration from it.
+:i:`2` - заполнить информацию из XML файла. Вы можете получить XML-файл с настройками под Вашу конфигурацию и просто загрузить всю конфигурацию из него.
 
-:i:`3` button saves current on-screen configuration into XML file for future use.
+:i:`3` - сохранить текущую конфигурацию с экрана в XML файл для дальнейшего использования.
 
-:i:`4` button resets default configuration which is defined by the version of application you are using.
+:i:`4` - сбросить конфигурацию на стандартную (определяется версией приложения, прошитого в модеме).
 
-:i:`5` button configures all on-screen configuration into modem.
+:i:`5` - конфигурирование модема по заданным на экране правилам.
 
-Reference manual for sections :i:`6` - :i:`13` will be added in future.
+Подробное руководство по секциям :i:`6` - :i:`13` будет добавлено в будущем.
 
 .. _troubleshooting:
 
@@ -149,13 +149,13 @@ Reference manual for sections :i:`6` - :i:`13` will be added in future.
 При попытке обновления из облака возникает ошибка
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If error occurred before ``at+wdss=1,1`` command is executed, it most likely happened because you have no SIM card installed. Please, check that you have SIM card installed and that your modem have reliable internet connection (correct APN is set).
+Если ошибка возникает перед командой ``at+wdss=1,1``, скорее всего в модеме отсутствует sim-карта. Пожалуйста, проверьте наличие и работоспособность sim-карты, а также надёжное интернет-соединение (правильный APN).
 
-Also, make sure that your modem is patched (see :ref:`preparation`). APN must be configured at least once.
+Помните также о том, что для корректной работы модем должен быть пропатчен (см. :ref:`preparation`). APN должен быть настроен как минимум 1 раз.
 
-Can't send command error is sometimes occurs, nothing helps unless application is restarted
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ошибка "Не удаётся отправить команду" периодически возникает, помогает только перезагрузка ModemManager
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is major bug with USB communication and it can occur sometimes based on Windows configuration, drivers configuration and modem configuration. This is hardware related question and low-level COM communication question, which will not be resolved in close time.
+Это текущий главный баг связанный с USB-соединением, он может возникать в связи с версией и конфигурацией Windows, драйверов и конфигурации модема. Это аппаратный вопрос низкоуровневого COM-соединения, который не будет решён в ближайшем времени.
 
-If you made your configuration in **"Configuration"** tab and then this error occured, you can just save whole configuration into XML file, restart application and load this configuration from XML file.
+Если Вы настроили конфигурацию на вкладвке **"Configuration"** и ошибка возникла в самом начале процесса конфигурации, а вы не хотите терять настроек, сохраните всю конфигурацию в XML-файл, перезапустите ModemManager и загрузите этот XML-файл обратно в программу.
