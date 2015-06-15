@@ -6,11 +6,11 @@ Functionality
 
 * Stable response from modem
 
-  .. image:: ../Figures/Stable.png
+  .. image:: Figures/Stable.png
 
 * Query all information about embedded module
 
-  .. image:: ../Figures/Information.png
+  .. image:: Figures/Information.png
 
   + General information
   + Memory sizes
@@ -18,7 +18,7 @@ Functionality
 
 * Queue of commands
 
-  .. image:: ../Figures/Queue.png
+  .. image:: Figures/Queue.png
 
   + All commands added to one queue executed in the background thread
   + User can pause and resume commands, added to the queue
@@ -28,11 +28,11 @@ Functionality
 
 * Uploading firmware, using XModem protocol
 
-  .. image:: ../Figures/XModem.png
+  .. image:: Figures/XModem.png
 
 * Automatic modem configuration
 
-  .. image:: ../Figures/Automate.png
+  .. image:: Figures/Automate.png
 
   + Erase application
   + Write bootloader and firmware
@@ -51,50 +51,50 @@ Usability
 
 * Command autocompletion and suggestion based on input history
 
-  .. image:: ../Figures/Autocompletion.png
+  .. image:: Figures/Autocompletion.png
 
 * Localization of every UI element as well as status messages
 
-  .. image:: ../Figures/Localization.png
+  .. image:: Figures/Localization.png
 
 * Remember all configured settings per sessions
 
-  .. image:: ../Figures/Settings.png
+  .. image:: Figures/Settings.png
 
 Visuals
 -------
 
-.. image:: ../Figures/Overall.png
+.. image:: Figures/Overall.png
 
 * Clean and filtered **Console window**
 
-  .. image:: ../Figures/Console.png
+  .. image:: Figures/Console.png
 
   + Command timespan
   + Colorful statuses in console
 
 * Raw serial **Monitor window**
 
-  .. image:: ../Figures/Monitor.png
+  .. image:: Figures/Monitor.png
 
   + Keep all history until another port is used
 
 * Search through both console windows
 
-  .. image:: ../Figures/Search.png
+  .. image:: Figures/Search.png
 
 * Colorful and noticeable status boxes
 
-  .. image:: ../Figures/States.png
+  .. image:: Figures/States.png
 
 * Flexible layout - windows are totally resizeable to any screen resolution, in-form splits are totally movable whenever you want. Also, you can show/hide information/console view (F11/F12)
 
-  .. image:: ../Figures/Resizeable.png
+  .. image:: Figures/Resizeable.png
      :width: 30em
 
 * Progressbar shows file uploading
 
-  .. image:: ../Figures/Uploading.png
+  .. image:: Figures/Uploading.png
 
 .. _key-shortcuts:
 
@@ -126,7 +126,7 @@ Command input field:
 Development
 -----------
 
-.. image:: ../Figures/Development.png
+.. image:: Figures/Development.png
 
 * Clean code base and architecture
 * Minimal dependencies

@@ -11,7 +11,7 @@
 
 Когда Вы первый раз откроете программу, Вы увидите следующее окно.
 
-.. image:: ../Screens/MainForm-ru.png
+.. image:: Screens/MainForm.png
 
 При запуске, все доступные в системе порты обновляются и добавляются в список портов :i:`1`. Вы можете вручную обновить список доступных портов, после добавления новых устройств, нажатием кнопки **"Открыть порт"** :i:`2`.
 
@@ -23,7 +23,7 @@
 
 Текстовое поле :i:`10` в самом низу позволяет слать AT-команды модему напрямую. Текстовое поле :i:`11` осуществляет поиск по обоим консольным окнам.
 
-.. image:: ../Screens/Search.png
+.. image:: Screens/Search.png
 
 .. note::
 
@@ -36,7 +36,7 @@
 
 При общении с модемом, будь то ручные команды или автоматическая кнопка настройки модема, AT-команды складываются в *"очередь"* команд. Очередь можно приостанавливать и возобнавлять, а также повторять последнюю (неудавшуюся) команду.
 
-.. image:: ../Screens/Queue-ru.png
+.. image:: Screens/Queue.png
 
 .. note::
 
@@ -59,13 +59,13 @@
 
 Для более комфортной работы с программой Вы можете настроить её удовлетворяющим Вас образом. Для этого перейдите на вкладку **"Настройки"** :i:`1`. Если Вы желаете пропустить часть по настройке программы, можете перейти к части :ref:`preparation`.
 
-.. image:: ../Screens/Settings-ru.png
+.. image:: Screens/Settings.png
 
 In listbox **"Application language"** :i:`2` you can choose whole application language between two languages (currently): english and russian. This localizes not only user interface, but also various status messages in console view.
 
 In listbox **"AT autocompletion"** :i:`3` you can select autocompletion type for manual AT-command input from 4 different types:
 
-.. image:: ../Screens/Autocomplete.png
+.. image:: Screens/Autocomplete.png
 
 :i:`8` - None
 
@@ -83,7 +83,7 @@ Checkbox **"Autofocus queue"** :i:`4` does exactly what it promises to do: it fo
 
 **"Colorize COM monitor"** :i:`5` checkbox improves look and feel of raw COM monitor at the bottom right side of application. It actually colorized input based on some rules, like orange for "quoted text".
 
-.. image:: ../Screens/ColorizedCOM.png
+.. image:: Screens/ColorizedCOM.png
 
 Checkbox **"Save settings on exit"** :i:`6` is needed for saving settings and state of the application between sessions. If you want to start from current setup all the time, just uncheck this checkbox and if you change any settings, they will not remain after restart.
 
@@ -100,7 +100,7 @@ Preparation
 
 Before start using modem, you need to prepare it for work. If you obtained clean modem without our latest application, or you wish to upgrade to the latest version and you haven't setup needed APN or other settings yet, you should do following:
 
-.. image:: ../Screens/Automatic.png
+.. image:: Screens/Automatic.png
 
 :i:`1` Remap Application & Filesystem disk space (if you need it).
 
@@ -125,9 +125,9 @@ Application configuration
 
 Configuring application only works if you have our application inside your modem (which is obvious).
 
-.. image:: ../Screens/Configuration1.png
+.. image:: Screens/Configuration1.png
 
-.. image:: ../Screens/Configuration2.png
+.. image:: Screens/Configuration2.png
 
 :i:`1` button fills information from modem.
 
