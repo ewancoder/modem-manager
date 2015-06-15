@@ -123,7 +123,7 @@
 Конфигурирование приложения модема
 ----------------------------------
 
-Configuring application only works if you have our application inside your modem (which is obvious).
+Конфигурирование (настройка) приложения (прошивки) модема работает только если эта прошивка присутствует на модеме (что очевидно).
 
 .. image:: Screens/Configuration1.png
 
