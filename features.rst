@@ -39,7 +39,7 @@ Functionality
   + Remap memory
 
     - Choose both AD and FS sizes, then let automatic mapper do the work for you
-    - Minimal size of AD aread is 256 MiB (for safety)
+    - Minimal size of AD aread is 256 KiB (for safety)
     - Visual view of mapped areas
 
   + Write application
