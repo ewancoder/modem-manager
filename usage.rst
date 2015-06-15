@@ -102,21 +102,21 @@
 
 .. image:: Screens/Automatic.png
 
-:i:`1` Remap Application & Filesystem disk space (if you need it).
+:i:`1` Переразбить внутреннюю память модема (место под приложение и файловую систему) если Вам это необходимо.
 
-:i:`2` Configure external (internet) APN for your simcard.
+:i:`2` Настроить внешнюю (интернет) APN для sim-карты.
 
-:i:`3` Make sure needed checkboxes is checked.
+:i:`3` Удостовериться, что необходимые флажки активны.
 
-:i:`4` Check these if you want to update in-modem time and then refill information from modem.
+:i:`4` Установить этот флажок если Вы хотите обновить внутреннее время модема и обновить (получить снова) информацию о модеме после выполнения всех действий.
 
-:i:`5` Finally click the **"Start"** button to get started. Then the queue (see :ref:`queue`) will be filled with needed commands and modem will proceed to setup.
+:i:`5` Нажать кнопку **"Начать"** для старта автоматического процесса подготовки модема. Очередь (см. :ref:`queue`) будет заполнена необходимыми командами и начнёт настройку модема.
 
-If you want to update firmware (or to download it the first time), click the **"Update from cloud"** :i:`6` button. The process of updating application from the cloud is tricky though, because you will probably run into errors and will need debug skills to proceed. If you encounter any errors, please proceed to :ref:`troubleshooting` area before contacting us.
+Если Вы хотите обновить приложение (прошивку) (или загрузить его первый раз), нажмите кнопку **"Обновление из облака"** :i:`6`. Процесс обновления приложения из облака не до конца явный, потому как Вам вероятно придётся обходить некоторые ошибки вводом команд вручную. Если Вы обнаружите какие-либо ошибки, обратите внимание к разделу :ref:`troubleshooting`.
 
 .. note::
 
-   APN MUST be configured at least once, because the procedure of APN configuration is also PATCHING modem for correct use.
+   APN должен быть настроен хотя бы один раз, т. к. процедура настройки APN также ПАТЧИТ модем для правильной работы.
 
 .. _configuration:
 
