@@ -45,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Modem Manager'
-copyright = '2015, Tehnikon, Ewancoder <ewancoder@gmail.com>'
+copyright = '2015, Technikon, Ewancoder <ewancoder@gmail.com>'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -191,15 +191,21 @@ latex_elements = {
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': '''
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+''',
 }
+#\usepackage[english,russian]{babel}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'ModemManager.tex', 'Modem Manager Documentation',
-   'Tehnikon, Ewancoder \\textless{}ewancoder@gmail.com\\textgreater{}', 'manual'),
+   'Tehnikon, Ewancoder', 'report'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
