@@ -205,7 +205,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'ModemManager.tex', 'Modem Manager Documentation',
-   'Technikon', 'report'),
+   'Technikon', 'report'), # 'Technikon, Ewancoder'
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
