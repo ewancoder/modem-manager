@@ -4,5 +4,6 @@ Modem Manager Documentation
 .. toctree::
    :maxdepth: 2
 
-   features
+   install
    usage
+   features
