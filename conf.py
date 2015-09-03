@@ -45,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Modem Manager'
-copyright = '2015, Technikon, Ewancoder <ewancoder@gmail.com>'
+copyright = '2015, Technikon' #, Ewancoder <ewancoder@gmail.com>'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -205,7 +205,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'ModemManager.tex', 'Modem Manager Documentation',
-   'Tehnikon, Ewancoder', 'report'),
+   'Technikon', 'report'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -235,7 +235,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'modemmanager', 'Modem Manager Documentation',
-     ['Tehnikon, Ewancoder <ewancoder@gmail.com>'], 1)
+     ['Technikon, Ewancoder <ewancoder@gmail.com>'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -249,7 +249,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'ModemManager', 'Modem Manager Documentation',
-   'Tehnikon, Ewancoder <ewancoder@gmail.com>', 'ModemManager', 'One line description of project.',
+   'Technikon, Ewancoder <ewancoder@gmail.com>', 'ModemManager', 'One line description of project.',
    'Miscellaneous'),
 ]
 
