@@ -1,0 +1,22 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Modem Manager 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-13 21:08+0300\n"
+"PO-Revision-Date: 2015-09-13 21:46+0300\n"
+"Last-Translator: Ivan Zyrianov <ewancoder@gmail.com>\n"
+"Language-Team: Technikon <skb@technikon.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../todo.rst:2
+msgid "ToDo list"
+msgstr "Список задач (ToDo)"
+
+#: ../../todo.rst:4
+msgid ""
+"This page is used for mere documentation development. ToDo list is shown "
+"only in Development version of the documentation."
+msgstr "Эта страница используется только при разработке документации. Список задач отображается лишь в разрабатываемой (девелоперской) версии документации."

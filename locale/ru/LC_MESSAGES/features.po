@@ -1,0 +1,288 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Modem Manager 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-13 21:08+0300\n"
+"PO-Revision-Date: 2015-09-13 21:11+0300\n"
+"Last-Translator: Ivan Zyrianov <ewancoder@gmail.com>\n"
+"Language-Team: Technikon <skb@technikon.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../features.rst:2
+msgid "Features"
+msgstr "Возможности"
+
+#: ../../features.rst:7
+msgid "Functionality"
+msgstr "Функциональность"
+
+#: ../../features.rst:9
+msgid "Stable response from modem"
+msgstr "Стабильная связь с модемом"
+
+#: ../../features.rst:13
+msgid "Query all information about embedded module"
+msgstr "Полная информация о модеме"
+
+#: ../../features.rst:17
+msgid "General information"
+msgstr "Общая информация"
+
+#: ../../features.rst:18
+msgid "Memory sizes"
+msgstr "Информация о памяти"
+
+#: ../../features.rst:19
+msgid "Firmware information"
+msgstr "Информация о прошивке"
+
+#: ../../features.rst:21
+msgid "Queue of commands"
+msgstr "Очередь команд"
+
+#: ../../features.rst:25
+msgid "All commands added to one queue executed in the background thread"
+msgstr "Все команды добавляются в общую очередь, работающую в фоне"
+
+#: ../../features.rst:26
+msgid "User can pause and resume commands, added to the queue"
+msgstr ""
+"Пользователи могут приостанавливать и продолжать команды, добавленные в "
+"очередь"
+
+#: ../../features.rst:27
+msgid "Queue can be automatically stopped when an error occur (if configured)"
+msgstr ""
+"Очередь может автоматически останавливаться при возникновении ошибок (если "
+"настроено)"
+
+#: ../../features.rst:28
+msgid ""
+"There is a list of current commands in the queue. Currently running command "
+"is highlighted"
+msgstr ""
+"Список текущих команд очереди отображается на экране. Текущая команда "
+"подсвечивается другим цветом"
+
+#: ../../features.rst:29
+msgid ""
+"When started automatic modem configuration, queue tab can be automatically "
+"selected (if not disabled)"
+msgstr ""
+"При запуске автоматической настройки модема, вкладка очереди автоматически "
+"открывается для просмотра"
+
+#: ../../features.rst:31
+msgid "Uploading firmware, using XModem protocol"
+msgstr "Загрузка прошивки, используя XModem-протокол"
+
+#: ../../features.rst:35
+msgid "Automatic modem configuration"
+msgstr "Автоматическая конфигурация модема"
+
+#: ../../features.rst:39
+msgid "Erase application"
+msgstr "Стереть приложение"
+
+#: ../../features.rst:40
+msgid "Write bootloader and firmware"
+msgstr "Запись загрузчика и прошивки"
+
+#: ../../features.rst:41
+msgid "Remap memory"
+msgstr "Разбивка памяти"
+
+#: ../../features.rst:43
+msgid ""
+"Choose both AD and FS sizes, then let automatic mapper do the work for you"
+msgstr ""
+"Выбор разделов приложения и файловой системы, автоматическая разбивка после"
+
+#: ../../features.rst:44
+msgid "Minimal size of AD aread is 256 KiB (for safety)"
+msgstr ""
+"Минимальный размер раздела памяти под приложение составляет 256 КиБ (для "
+"защиты)"
+
+#: ../../features.rst:45
+msgid "Visual view of mapped areas"
+msgstr "Визуальное отображение распределённой памяти"
+
+#: ../../features.rst:47
+msgid "Write application"
+msgstr "Запись приложения"
+
+#: ../../features.rst:48
+msgid "Prepare modem for remote firmware writing"
+msgstr "Подготовка модема к удалённой прошивке"
+
+#: ../../features.rst:49
+msgid "Sync time"
+msgstr "Синхронизация времени"
+
+#: ../../features.rst:52
+msgid "Usability"
+msgstr "Удобство"
+
+#: ../../features.rst:54
+msgid "Command autocompletion and suggestion based on input history"
+msgstr "Автодополнение команд с всплывающим списком истории"
+
+#: ../../features.rst:58
+msgid "Localization of every UI element as well as status messages"
+msgstr "Локализация всех графических элементов, статус-сообщений и т. п."
+
+#: ../../features.rst:62
+msgid "Remember all configured settings per sessions"
+msgstr "Сохранение всех настроек между сессиями"
+
+#: ../../features.rst:67
+msgid "Visuals"
+msgstr "Визуальный стиль"
+
+#: ../../features.rst:71
+msgid "Clean and filtered **Console window**"
+msgstr "Чистое и фильтрованное **окно консоли**"
+
+#: ../../features.rst:75
+msgid "Command timespan"
+msgstr "Дата выполнения команды"
+
+#: ../../features.rst:76
+msgid "Colorful statuses in console"
+msgstr "Цветные статусы в консоли"
+
+#: ../../features.rst:78
+msgid "Raw serial **Monitor window**"
+msgstr "Низкоуровневое **окно COM-монитора**"
+
+#: ../../features.rst:82
+msgid "Keep all history until another port is used"
+msgstr "Содержит всю историю команд пока порт открыт"
+
+#: ../../features.rst:84
+msgid "Search through both console windows"
+msgstr "Поиск по обоим консольным окнам"
+
+#: ../../features.rst:88
+msgid "Colorful and noticeable status boxes"
+msgstr "Цветные и заметные статус-индикаторы"
+
+#: ../../features.rst:92
+msgid ""
+"Flexible layout - windows are totally resizeable to any screen resolution, "
+"in-form splits are totally movable whenever you want. Also, you can "
+"show/hide information/console view (F11/F12)"
+msgstr ""
+"Гибкий дизайн - окна полностью растягиваемы и сжимаемы, совместимы с любыми "
+"разрешениями экранов, внутренние разделители позволяют раздвигать элементы "
+"для большей гибкости. Также, можно показать/скрыть некоторые окна горячими "
+"клавишами (F11/F12)."
+
+#: ../../features.rst:97
+msgid "Progressbar shows file uploading"
+msgstr "Индикатор прогресса показывает процесс загрузки файла"
+
+#: ../../features.rst:104
+msgid "Keyboard shortcuts"
+msgstr "Горячие клавиши"
+
+#: ../../features.rst:106
+msgid "Global:"
+msgstr "Общие:"
+
+#: ../../features.rst:108
+msgid ":s:`F11` - Hide / show **Main** view"
+msgstr ":s:`F11` - Скрыть / показать **главное** окно"
+
+#: ../../features.rst:110
+msgid ":s:`F12` - Hide / show **Console** view"
+msgstr ":s:`F12` - Скрыть / показать **консольное** окно"
+
+#: ../../features.rst:112
+msgid ":s:`Ctrl` + :s:`L` - Clear console"
+msgstr ":s:`Ctrl` + :s:`L` - Очистить консоль"
+
+#: ../../features.rst:114
+msgid ":s:`Ctrl` + :s:`S` - Save all settings"
+msgstr ":s:`Ctrl` + :s:`S` - Сохранить все настройки"
+
+#: ../../features.rst:116
+msgid "Command input field:"
+msgstr "Ввод AT-команд:"
+
+#: ../../features.rst:118
+msgid ":s:`Return` - Send command"
+msgstr ":s:`Return` - Послать команду"
+
+#: ../../features.rst:120
+msgid ""
+":s:`Ctrl` + :s:`Z` - Send data in download mode (substitute character at the"
+" end)"
+msgstr ""
+":s:`Ctrl` + :s:`Z` - Послать данные для загрузки (символ substutite в конце "
+"строки)"
+
+#: ../../features.rst:122
+msgid "Window focus:"
+msgstr "Навигация внутри окна:"
+
+#: ../../features.rst:124
+msgid ":s:`Ctrl` + :s:`F` - Focus search field"
+msgstr ":s:`Ctrl` + :s:`F` - Перейти на поле поиска"
+
+#: ../../features.rst:139
+msgid "Development"
+msgstr "Разработка"
+
+#: ../../features.rst:143
+msgid "Clean code base and architecture"
+msgstr "Чистая кодовая база и архитектура"
+
+#: ../../features.rst:144
+msgid "Minimal dependencies"
+msgstr "Минимальные зависимости"
+
+#: ../../features.rst:145
+msgid ""
+"Threading: all the work done in the background thread, UI does not freeze"
+msgstr "Мультипоточность: вся работа совершается в фоне, графический интерфейс не тормозит"
+
+#: ../../features.rst:146
+msgid "Separate classes do separate work"
+msgstr "Разные классы делают распределённую работу"
+
+#: ../../features.rst:147
+msgid "Constructive comments for most code blocks"
+msgstr "Конструктивные комментарии для большинства блоков кода"
+
+#: ../../features.rst:148
+msgid "Code enclosed in #regions for clarity"
+msgstr "Части кода закрыты в блоках региона #regions для удобства"
+
+#: ../../features.rst:126
+msgid ":s:`Alt` + :s:`1` - switch to 1st **Connection** tab"
+msgstr ":s:`Alt` + :s:`1` - переключиться на 1ую вкладку **Соединение**"
+
+#: ../../features.rst:128
+msgid ":s:`Alt` + :s:`2` - switch to 2nd **Queue** tab"
+msgstr ":s:`Alt` + :s:`2` - переключиться на 2ую вкладку **Очередь**"
+
+#: ../../features.rst:130
+msgid ":s:`Alt` + :s:`3` - switch to 3rd **Settings** tab"
+msgstr ":s:`Alt` + :s:`3` - переключиться на 3ю вкладку **Настройки**"
+
+#: ../../features.rst:132
+msgid ":s:`Alt` + :s:`4` - switch to 4th **Information** tab"
+msgstr ":s:`Alt` + :s:`4` - переключиться на 4ую вкладку **Информация**"
+
+#: ../../features.rst:134
+msgid ":s:`Alt` + :s:`5` - switch to 5th **Automatic** tab"
+msgstr ":s:`Alt` + :s:`5` - переключиться на 5ую вкладку **Автоматический режим**"
+
+#: ../../features.rst:136
+msgid ":s:`Alt` + :s:`6` - switch to 6th **Configuration** tab"
+msgstr ":s:`Alt` + :s:`6` - переключиться на 6ую вкладку **Конфигурация**"

@@ -1,0 +1,340 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Modem Manager 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-13 21:08+0300\n"
+"PO-Revision-Date: 2015-09-13 21:48+0300\n"
+"Last-Translator: Ivan Zyrianov <ewancoder@gmail.com>\n"
+"Language-Team: Technikon <skb@technikon.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../usage.rst:2
+msgid "User guide"
+msgstr "Руководство пользователя"
+
+#: ../../usage.rst:10
+msgid "Starting communication"
+msgstr "Установка соединения"
+
+#: ../../usage.rst:12
+msgid "When you first open the program, you will see the main window."
+msgstr "Когда Вы первый раз откроете программу, Вы увидите следующее окно."
+
+#: ../../usage.rst:22
+msgid ""
+"At start, all ports available within OS should be updated and filled in "
+"ports list :i:`1`. You can manually refresh them after inserting new devices"
+" by clicking **\"Rescan\"** :i:`2` button."
+msgstr "При запуске, все доступные в системе порты обновляются и добавляются в список портов :i:`1`. Вы можете вручную обновить список доступных портов, после добавления новых устройств, нажатием кнопки **\"Открыть порт\"** :i:`2`."
+
+#: ../../usage.rst:24
+msgid ""
+"After choosing needed port, select (or input manually) serial port speed "
+"(baud rate) for given device :i:`3`. Check or uncheck **\"Fill "
+"automatically\"** :i:`4` checkbox: if it is checked, all information about "
+"modem will be filled automatically after you have connected to modem. You "
+"can also fill information manually using **\"Fill information\"** :i:`5` "
+"button. The same result could be achieved by using :s:`F5` key (refresh "
+"information, see :ref:`key-shortcuts`)."
+msgstr "После выбора необходимого порта, выберите (или введите) необходимую скорость передачи данных (baud rate) для выбранного устройства :i:`3`. Установите флажок **\"Заполнить автоматически\"** :i:`4` если Вы хотите чтобы программа заполнила информацию о модеме автоматически при подключении к устройству. Также в любой момент можно сделать это вручную используя кнопку **\"Заполнить информацию\"** :i:`5`. Тот же результат может быть получен нажатием горячей клавиши :s:`F5` (обновить информацию, см. :ref:`key-shortcuts`)."
+
+#: ../../usage.rst:26
+msgid ""
+"Click **\"Open port\"** :i:`6` button to start communication. If port has "
+"been successfully opened, status indicator :i:`7` will turn green. This "
+"status indicator could be 3 different colors: red for closed, green for "
+"opened, blue for *\"downloading mode\"*."
+msgstr "Для подключения к модему нажмите кнопку **\"Открыть порт\"** :i:`6`. Если порт был успешно открыт, индикатор текущего статуса :i:`7` станет зелёным. Индикатор статуса может быть трех разных цветов: красный при закрытом порту, зелёный - при открытом, синий - в режиме *\"загрузки\"*."
+
+#: ../../usage.rst:30
+msgid ""
+"There's console view at the bottom of the window. Left view is for pretty "
+"status messages and filtered AT-command results, where right view is raw COM"
+" (serial) monitor which displays all that flows through COM connection."
+msgstr "В нижней части окна располагается консольный монитор. Левая :i:`8` часть отвечает за красивые статусные сообщения и фильтрованный вывод AT-команд, правая :i:`9` часть является монитором последовательного COM-соединения и отображает всё что попадает в COM-порт."
+
+#: ../../usage.rst:32
+msgid ""
+"Text field :i:`8` at the bottom allows to send AT commands explicitly into "
+"modem and text field **\"Search\"** :i:`9` allows to search through both "
+"console windows."
+msgstr "Текстовое поле :i:`10` в самом низу позволяет слать AT-команды модему напрямую. Текстовое поле :i:`11` осуществляет поиск по обоим консольным окнам."
+
+#: ../../usage.rst:38
+msgid ""
+"Search does not work incrementally: it just highlights all found matches so "
+"you can see them distinctly."
+msgstr "Поиск работает не инкрементально: он лишь подсвечивает все совпадения для удобного просмотра результатов."
+
+#: ../../usage.rst:43
+msgid "Using queue"
+msgstr "Очередь команд"
+
+#: ../../usage.rst:45
+msgid ""
+"Whether you are using console input or automatized button which processes "
+"number of tasks, these tasks will be added into the queue of commands which "
+"you can see, pause and resume. Also you can repeat last sent (unsuccessful) "
+"command."
+msgstr "При общении с модемом, будь то ручные команды или автоматическая кнопка настройки модема, AT-команды складываются в *\"очередь\"* команд. Очередь можно приостанавливать и возобнавлять, а также повторять последнюю (неудавшуюся) команду."
+
+#: ../../usage.rst:57
+msgid ""
+"If you have **\"Autofocus queue\"** enabled in settings, this tab will be "
+"automatically opened when automatized sequence of commands is triggered (see"
+" :ref:`settings`)."
+msgstr "Если флажок **\"Автоматически показывать очередь\"** (в настройках) включен, вкладка очереди будет автоматически открыта когда автоматизированный набор команд будет запущен на исполнение (см. :ref:`settings`)."
+
+#: ../../usage.rst:59
+msgid ""
+"Here you can see list of commands that appeared after starting modem "
+"application configuration (see :ref:`configuration`). Currently working "
+"command is highlighted by green color if it is AT-command and by blue color "
+"if it is a process which uses progressbar below (XModem uploading, "
+"analog/digital inputs configuration)."
+msgstr "На скриншоте отображён список команд, появившихся после запуска конфигурирования приложения модема (см. :ref:`configuration`). Текущая работающая команда подсвечена зелёным цветом если это AT-команда, и синим цветом если это длительный процесс (загрузка прошивки по протоколу XModem, перенастройка аналоговых и цифровых входов)."
+
+#: ../../usage.rst:61
+msgid ""
+"Checkbox **\"Autopause\"** :i:`1` makes sure that if an error occurs when "
+"command is executed, whole queue would be paused and you will be notified of"
+" that. In most cases, this checkbox should be enabled."
+msgstr "Флажок **\"Автопауза\"** :i:`1` отвечает за приостановку очереди в случае возникновения ошибок при выполнении команды. В большинстве сценариев, этот влажок должен быть активен."
+
+#: ../../usage.rst:63
+msgid ""
+"Button **\"Pause/Resume\"**  :i:`2` allows to manually pause/resume queue. "
+"If the queue is paused, you can still input new AT commands which will be "
+"immediately executed in second (parallel) queue which is always working in "
+"non-pausing mode for this case specially."
+msgstr "Кнопка **\"Пауза/Продолжить\"** :i:`2` позволяет вручную приостановить/возобновить очередь. Если очередь приостановлена, Вы всё ещё можете посылать модему AT-команды, которые будут выполнены сразу же после ввода в параллельной (другой) очереди, работающей без остановок специально для этого применения."
+
+#: ../../usage.rst:65
+msgid ""
+"Button **\"Repeat\"** :i:`3` allows to repeat last (failed) AT-command if "
+"the queue is currently paused. This command is executed in second queue, so "
+"this is just an automation around typing the same command again and again."
+msgstr "Кнопка **\"Повторить\"** :i:`3` позволяет повторить последнюю (неудавшуюся) AT-команду если очередь в данный момент приостановлена. Эта команда исполняется в параллельной очереди, позволяя заменить ввод одной и той же команды вручную."
+
+#: ../../usage.rst:67
+msgid ""
+"Progressbar :i:`4` is needed for indicating progress of long events (such as"
+" downloading firmware or configuring lots of ports)."
+msgstr "Индикатор состояния :i:`4` нужен для отображения прогресса долгих событий (таких как загрузка прошивки или перенастройка большого количества портов)."
+
+#: ../../usage.rst:72
+msgid "ModemManager settings"
+msgstr "Настройки ModemManager"
+
+#: ../../usage.rst:74
+msgid ""
+"For more comfortable look and feel you may wish to setup it for your "
+"demands. To do so, go to **\"Settings\"** :i:`1` tab. If you wish to skip "
+"settings chapter, go to :ref:`preparation` section."
+msgstr "Для более комфортной работы с программой Вы можете настроить её удовлетворяющим Вас образом. Для этого перейдите на вкладку **\"Настройки\"** :i:`1`. Если Вы желаете пропустить часть по настройке программы, можете перейти к части :ref:`preparation`."
+
+#: ../../usage.rst:84
+msgid ""
+"In listbox **\"Application language\"** :i:`2` you can choose whole "
+"application language between two languages (currently): english and russian."
+" This localizes not only user interface, but also various status messages in"
+" console view."
+msgstr "Выпадающий список **\"Язык приложения\"** :i:`2` позволяет выбрать язык всего приложения. Локализация включает не только перевод интерфейса, но также перевод всех сообщений, статусов и т. п. На текущий момент доступны два языка: английский и русский."
+
+#: ../../usage.rst:86
+msgid ""
+"In listbox **\"AT autocompletion\"** :i:`3` you can select autocompletion "
+"type for manual AT-command input from 4 different types:"
+msgstr "В списке **\"Автодополнение\"** :i:`3` можно выбрать тип автодополнения при вводе ручных AT-команд. Всего есть 4 типа дополнения:"
+
+#: ../../usage.rst:90
+msgid ":i:`8` - None"
+msgstr ":i:`8` - Нет"
+
+#: ../../usage.rst:92
+msgid ":i:`9` - Suggest"
+msgstr ":i:`9` - Всплывающая подсказка"
+
+#: ../../usage.rst:94
+msgid ":i:`10` - Append"
+msgstr ":i:`10` - Дополнение в строке"
+
+#: ../../usage.rst:96
+msgid ":i:`11` - Suggest and append"
+msgstr ":i:`11` - Подсказка и дополнение"
+
+#: ../../usage.rst:100
+msgid ""
+"Autocompletion uses history of used AT-commands. There's no predefined list "
+"of commands."
+msgstr "Автодополнение использует историю вводимых команд. При запуске программы список пуст, т. е. автодополнения по всем AT-командам нету."
+
+#: ../../usage.rst:102
+msgid ""
+"Checkbox **\"Autofocus queue\"** :i:`4` does exactly what it promises to do:"
+" it focuses **\"Queue\"** tab (see :ref:`queue`) when automatized queue of "
+"commands is started, so that you can see whole queue coming and going."
+msgstr "Флажок **\"Автоматически показывать очередь\"** :i:`4` делает именно то, что говорит: открывает вкладку **\"Очередь\"** (см. :ref:`queue`) при старте выполнения длинной очереди команд для того, чтобы Вы могли видеть что происходит в данный момент."
+
+#: ../../usage.rst:104
+msgid ""
+"**\"Colorize COM monitor\"** :i:`5` checkbox improves look and feel of raw "
+"COM monitor at the bottom right side of application. It actually colorized "
+"input based on some rules, like orange for \"quoted text\"."
+msgstr "Флажок **\"Раскраска COM-монитора\"** :i:`5` улучшает вид вывода монитора последовательного порта (справа снизу) путём раскраски \"синтаксиса\" отдельных частей, например оранжевый - для текста в кавычках."
+
+#: ../../usage.rst:108
+msgid ""
+"Checkbox **\"Save settings on exit\"** :i:`6` is needed for saving settings "
+"and state of the application between sessions. If you want to start from "
+"current setup all the time, just uncheck this checkbox and if you change any"
+" settings, they will not remain after restart."
+msgstr "Флажок **\"Сохранить настройки при выходе\"** :i:`6` необходим для сохранение всевозможных статусов и установленных настроек приложения между сессиями. Если Вы хотите запретить изменение настроек, снимите эту галочку и приложение будет начинать каждый раз с теми же настройками (текущими сохранёнными)."
+
+#: ../../usage.rst:112
+msgid ""
+"The program will not save **\"Save settings on exit\"** option if it is "
+"unchecked. To explicitely save it you should use :s:`Ctrl` + :s:`S` shortcut"
+" to manually save current settings (see :ref:`key-shortcuts`)."
+msgstr "Программа не сохранит настройку **\"Сохранять настройки при выходе\"** если флажок снят. Чтобы намеренно сохранить эту настройку, используйте горячее сочетание клавиш :s:`Ctrl` :s:`S`, которое позволяет сохранять настройки в любой момент времени (см. :ref:`key-shortcuts`)."
+
+#: ../../usage.rst:114
+msgid ""
+"And finally, button **\"Reset defaults\"** :i:`7` resets all configurations "
+"to its default values without possibility to return :)"
+msgstr "И, наконец, кнопка **\"Сбросить настройки\"** :i:`7` сбрасывает все возможные настроки на их стандартные значения без возможности возврата :)"
+
+#: ../../usage.rst:119
+msgid "Preparation"
+msgstr "Подготовка к работе"
+
+#: ../../usage.rst:121
+msgid ""
+"Before start using modem, you need to prepare it for work. If you obtained "
+"clean modem without our latest application, or you wish to upgrade to the "
+"latest version and you haven't setup needed APN or other settings yet, you "
+"should do following:"
+msgstr "Перед началом использования модема, необходимо подготовить его для работы. Если у Вас есть чистый модем без нашего приложения последней версии, или Вы желаете обновить приложение до последней версии, или не был настроен APN sim-карты, необходимо сделать следующее:"
+
+#: ../../usage.rst:131
+msgid ":i:`1` Remap Application & Filesystem disk space (if you need it)."
+msgstr ":i:`1` Переразбить внутреннюю память модема (место под приложение и файловую систему) если Вам это необходимо."
+
+#: ../../usage.rst:133
+msgid ":i:`2` Configure external (internet) APN for your simcard."
+msgstr ":i:`2` Настроить внешнюю (интернет) APN для sim-карты."
+
+#: ../../usage.rst:135
+msgid ":i:`3` Make sure needed checkboxes is checked."
+msgstr ":i:`3` Удостовериться, что необходимые флажки активны."
+
+#: ../../usage.rst:137
+msgid ""
+":i:`4` Check these if you want to update in-modem time and then refill "
+"information from modem."
+msgstr ":i:`4` Установить этот флажок если Вы хотите обновить внутреннее время модема и обновить (получить снова) информацию о модеме после выполнения всех действий."
+
+#: ../../usage.rst:139
+msgid ""
+":i:`5` Finally click the **\"Start\"** button to get started. Then the queue"
+" (see :ref:`queue`) will be filled with needed commands and modem will "
+"proceed to setup."
+msgstr ":i:`5` Нажать кнопку **\"Начать\"** для старта автоматического процесса подготовки модема. Очередь (см. :ref:`queue`) будет заполнена необходимыми командами и начнёт настройку модема."
+
+#: ../../usage.rst:141
+msgid ""
+"If you want to update firmware (or to download it the first time), click the"
+" **\"Update from cloud\"** :i:`6` button. The process of updating "
+"application from the cloud is tricky though, because you will probably run "
+"into errors and will need debug skills to proceed. If you encounter any "
+"errors, please proceed to :ref:`troubleshooting` area before contacting us."
+msgstr "Если Вы хотите обновить приложение (прошивку) (или загрузить его первый раз), нажмите кнопку **\"Обновление из облака\"** :i:`6`. Процесс обновления приложения из облака не до конца явный, потому как Вам вероятно придётся обходить некоторые ошибки вводом команд вручную. Если Вы обнаружите какие-либо ошибки, обратите внимание к разделу :ref:`troubleshooting`."
+
+#: ../../usage.rst:145
+msgid ""
+"APN MUST be configured at least once, because the procedure of APN "
+"configuration is also PATCHING modem for correct use."
+msgstr "APN должен быть настроен хотя бы один раз, т. к. процедура настройки APN также ПАТЧИТ модем для правильной работы."
+
+#: ../../usage.rst:150
+msgid "Application configuration"
+msgstr "Конфигурирование приложения модема"
+
+#: ../../usage.rst:152
+msgid ""
+"Configuring application only works if you have our application inside your "
+"modem (which is obvious)."
+msgstr "Конфигурирование (настройка) приложения (прошивки) модема работает только если эта прошивка присутствует на модеме (что очевидно)."
+
+#: ../../usage.rst:170
+msgid ":i:`1` button fills information from modem."
+msgstr ":i:`1` - заполнить информацию из модема."
+
+#: ../../usage.rst:172
+msgid ""
+":i:`2` button fills information from XML config file. You can get such file "
+"with predefined settings and just load whole configuration from it."
+msgstr ":i:`2` - заполнить информацию из XML файла. Вы можете получить XML-файл с настройками под Вашу конфигурацию и просто загрузить всю конфигурацию из него."
+
+#: ../../usage.rst:174
+msgid ""
+":i:`3` button saves current on-screen configuration into XML file for future"
+" use."
+msgstr ":i:`3` - сохранить текущую конфигурацию с экрана в XML файл для дальнейшего использования."
+
+#: ../../usage.rst:176
+msgid ""
+":i:`4` button resets default configuration which is defined by the version "
+"of application you are using."
+msgstr ":i:`4` - сбросить конфигурацию на стандартную (определяется версией приложения, прошитого в модеме)."
+
+#: ../../usage.rst:178
+msgid ":i:`5` button configures all on-screen configuration into modem."
+msgstr ":i:`5` - конфигурирование модема по заданным на экране правилам."
+
+#: ../../usage.rst:180
+msgid ""
+"Reference manual for sections :i:`6` - :i:`13` will be added in future."
+msgstr "Подробное руководство по секциям :i:`6` - :i:`13` будет добавлено в будущем."
+
+#: ../../usage.rst:185
+msgid "Troubleshooting"
+msgstr "Проблемы и их решение"
+
+#: ../../usage.rst:188
+msgid "Error occurs when trying updating from cloud"
+msgstr "При попытке обновления из облака возникает ошибка"
+
+#: ../../usage.rst:190
+msgid ""
+"If error occurred before ``at+wdss=1,1`` command is executed, it most likely"
+" happened because you have no SIM card installed. Please, check that you "
+"have SIM card installed and that your modem have reliable internet "
+"connection (correct APN is set)."
+msgstr "Если ошибка возникает перед командой ``at+wdss=1,1``, скорее всего в модеме отсутствует sim-карта. Пожалуйста, проверьте наличие и работоспособность sim-карты, а также надёжное интернет-соединение (правильный APN)."
+
+#: ../../usage.rst:192
+msgid ""
+"Also, make sure that your modem is patched (see :ref:`preparation`). APN "
+"must be configured at least once."
+msgstr "Помните также о том, что для корректной работы модем должен быть пропатчен (см. :ref:`preparation`). APN должен быть настроен как минимум 1 раз."
+
+#: ../../usage.rst:195
+msgid "Program stopped working and port has disappeared"
+msgstr "Программа перестала работать и порт исчез"
+
+#: ../../usage.rst:197
+msgid ""
+"This is presumably Sierra Wireless USB driver problem. You will most likely "
+"need to reboot your PC to be able to see port again."
+msgstr "Это, предположительно, проблема драйвера Sierra Wireless USB driver. Скорее всего, вам понадобится перезагрузить компьютер для того чтобы порт снова появился в системе."
+
+#: ../../usage.rst:199
+msgid ""
+"If this error happened when you already set up configuration in the "
+"**\"Configuration\"** tab, you can simply save whole configuration into XML "
+"file, restart application and load this configuration from XML file."
+msgstr "Если проблема возникла во время конфигурации (вкладка **\"Конфигурация\"**), Вы можете сохранить текущую конфигурацию в XML файл, перезапустить программу и загрузить конфигурацию из XML файла."

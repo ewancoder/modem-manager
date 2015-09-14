@@ -1,0 +1,133 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Modem Manager 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-13 21:08+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../install.rst:2
+msgid "Installation"
+msgstr "Установка"
+
+#: ../../install.rst:6
+msgid ""
+"This program is portable and does not need installation. However, if you "
+"want offline documentation and/or localization files, you should install and"
+" use the program from the folder with all corresponding files. Also, you may"
+" need to install Sierra Wireless USB driver, which is packed inside the "
+"installation."
+msgstr "Приложение является портативным и не нуждается в установке. Однако, если вам нужна оффлайн документация и/или файлы локализации, необходимо установить и использовать программу из папки со всеми соответствующими файлами. Возможно вам также понадобится установить драйвер Sirra Wireless USB driver, который упакован в установщике."
+
+#: ../../install.rst:8
+msgid ""
+"Choose preferred installation language. This language will only be used for "
+"the installation: you can switch interface languages inside the program "
+"later. Note that if your OS does not have preferred language installed, you "
+"will not be able to choose this language."
+msgstr "Выберите предпочитаемый язык установки. Этот язык будет использован только на время установки: в программе язык можно будет сменить позже. Обратите внимание, что если ваша ОС не имеет в наличии пакета выбранного языка, вы не сможете выбрать язык."
+
+#: ../../install.rst:10
+msgid ""
+"Currently (release |release|), only english and russian languages are "
+"supported both in Modem Manager and in its documentation. Although, "
+"translation can be made quickly and effortlessly from the technical point of"
+" view."
+msgstr "На текущий момент (релиз |release|), программой поддерживаются всего 2 языка: английский и русский. Хотя перевод может быть осуществлён быстро и без особых усилий с технической точки зрения."
+
+#: ../../install.rst:20
+msgid "Accept license agreement."
+msgstr "Примите условия лицензионного соглашения."
+
+#: ../../install.rst:22
+msgid ""
+"Currently (release |release|), we are working on license agreement, so "
+"there's just copyright notice. This means you agree that the rights to the "
+"software are owned by us. Later, when license agreement will be officially "
+"added, you'll need to agree to it to continue using the program."
+msgstr "На текущий момент (релиз |release|), мы работаем над лицензионным соглашением, поэтому вместо него - заметка о копирайте. Это означает что вы согласны с тем, что все права на ПО принадлежат нам. Позже, когда лицензионное соглашение будет официально составлено, Вам будет необходимо принять его чтобы продолжить пользоваться программой."
+
+#: ../../install.rst:28
+msgid ""
+"Choose folder where Modem Manager will be installed. Modem Manager installs "
+"some additional files like localization and help files."
+msgstr "Выберите папку, куда Modem Manager будет установлен. Modem Manager устанавливает набор дополнительных файлов, таких как локализация и справка (документация)."
+
+#: ../../install.rst:32
+msgid ""
+"Note that if your OS does not allow write access to the folder where Modem "
+"Manager will be installed, the program will not create log files when in "
+"use. Also, it may not create some other files, so please make sure that your"
+" user does have correct rights."
+msgstr "Обратите внимание: если ваша ОС не разрешает доступ на запись в директорию, куда Modem Manager устанавливается, в дальнейшем (при использовании) программа не сможет создать лог-файлы. Возможно, она не сможет создать некоторые другие файлы, поэтому убедитесь, что пользователь имеет необходимые права."
+
+#: ../../install.rst:34
+msgid ""
+"In Windows 10 Program Files folder access is denied to regular user by "
+"default, so you'd have to start the program with Administrator rights."
+msgstr "В Windows 10 папка Program Files по умолчанию запрещает доступ пользователя на запись, так что Вам придётся запускать программу от прав Администратора."
+
+#: ../../install.rst:36
+msgid ""
+"This should be fixed in later versions of the program, where log files will "
+"be stored in Documents (or temporary) folder."
+msgstr "Данная проблема будет решена в последующих версиях ПО, где лог-файлы будут храниться в папке Мои Документы (или во временной директории)."
+
+#: ../../install.rst:42
+msgid "Choose which files to install. You have 3 options:"
+msgstr "Выберите набор устанавливаемых файлов. Есть 3 опции:"
+
+#: ../../install.rst:44
+msgid ""
+"Full installation. All files will be installed, including documentation, "
+"localization and drivers."
+msgstr "Полная установка. Все файлы будут установлены, включая документацию, локализацию и драйвера."
+
+#: ../../install.rst:45
+msgid ""
+"Compact (minimal) installation. Only core files will be installed: the "
+"executable itself and the copyright notice (license agreement)."
+msgstr "Компактная (минимальная) установка. Минимальный набор файлов: запускной (.exe) файл и копирайт (лицензионное соглашение)."
+
+#: ../../install.rst:46
+msgid ""
+"Custom installation. You can choose which files to install. This option will"
+" be selected automatically if you check/uncheck items manually."
+msgstr "Пользовательская установка. Данный пункт выделится автоматически при выделении и снятии флажков вручную. Выбор компонентов полностью за Вами."
+
+#: ../../install.rst:48
+msgid ""
+"Choose program shortcut to be created in the Start Menu folder. If you don't"
+" want it to be created, you can check \"Don't create a Start Menu folder\"."
+msgstr "Настройте создаваемую ссылку в меню Все программы. Если Вы не хотите, чтобы ссылка была создана, снимите флажок Не создавать ярлык в меню Все программы"
+
+#: ../../install.rst:50
+msgid ""
+"Check \"Install Sierra Wireless USB drivers\" checkbox to install USB "
+"driver. The driver is needed to communicate with modem over miniUSB cable. "
+"If you already have it installed, you can uncheck it. Uncheck \"Create a "
+"desktop icon\" if you don't want it to be created."
+msgstr "Поставьте флажок Install Sierra Wireless USB drivers для установки USB драйвера. Драйвер необходим для общения с модемом через миниUSB кабель. Если драйвер уже был установлен, Вы можете снять флажок. Снимите также флажок Создать иконку на рабочем столе, если вы не хотите этого."
+
+#: ../../install.rst:54
+msgid ""
+"\"Install Sierra Wireless USB drivers\" checkbox will only appear if you "
+"have selected it in installed files selection list before."
+msgstr "Флажок \"Install Sierra Wireless USB drivers\" появится лишь в случае, если драйвер был ранее выбран на экране выбора компонентов установки."
+
+#: ../../install.rst:56
+msgid ""
+"Make sure that everything suits your needs and click Install button to begin"
+" the installation."
+msgstr "Убедитесь, что конфигурация указана правильно и нажмите кнопку Установка"
+
+#: ../../install.rst:58
+msgid ""
+"Finally uncheck \"Launch Technikon Modem Manager\" if you don't want it to "
+"launch right away and finish the installation."
+msgstr "Наконец, снимите флажок \"Launch Technikon Modem Manager\" если вы не хотите запустить Modem Manager сейчас, и завершите установку."
