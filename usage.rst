@@ -118,7 +118,13 @@ And finally, button **"Reset defaults"** :i:`7` resets all configurations to its
 Preparation
 -----------
 
-Before start using modem, you need to prepare it for work. If you obtained clean modem without our latest application, or you wish to upgrade to the latest version and you haven't setup needed APN or other settings yet, you should do following:
+Before using modem, you need to prepare it for work. If you obtained clean modem just from shop without our application and configuration, you need to write initial operational (OS) firmware and bootloader for it. To do this, click "Prepare empty modem" button at the lower left of the "Connection" tab. This should perform initial preparation on modem, so that you could use it properly.
+
+.. warning::
+
+   You should run application from the installed folder with "Firmware" component installed, so that OS Firmware and Bootloader files (Firmware.dwl and Bootloader.dwl) is present within "Firmware" folder in the same directory where the application is located.
+
+This step totally rewrites OS firmware and resets default modem configuration. To reconfigure modem for your needs, do the following on the "Automatic" tab:
 
 .. ifconfig:: language == 'en'
 
@@ -139,10 +145,6 @@ Before start using modem, you need to prepare it for work. If you obtained clean
 :i:`5` Finally click the **"Start"** button to get started. Then the queue (see :ref:`queue`) will be filled with needed commands and modem will proceed to setup.
 
 If you want to update firmware (or to download it the first time), click the **"Update from cloud"** :i:`6` button. The process of updating application from the cloud is tricky though, because you will probably run into errors and will need debug skills to proceed. If you encounter any errors, please proceed to :ref:`troubleshooting` area before contacting us.
-
-.. note::
-
-   APN MUST be configured at least once, because the procedure of APN configuration is also PATCHING modem for correct use.
 
 .. _configuration:
 
@@ -189,7 +191,7 @@ Error occurs when trying updating from cloud
 
 If error occurred before ``at+wdss=1,1`` command is executed, it most likely happened because you have no SIM card installed. Please, check that you have SIM card installed and that your modem have reliable internet connection (correct APN is set).
 
-Also, make sure that your modem is patched (see :ref:`preparation`). APN must be configured at least once.
+Also, make sure that your modem is patched (see :ref:`preparation`). You should click "Prepare empty modem" at least once per each new modem.
 
 Program stopped working and port has disappeared
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
