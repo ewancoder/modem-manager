@@ -194,31 +194,19 @@ msgstr "Горячие клавиши"
 msgid "Global:"
 msgstr "Общие:"
 
-#: ../../features.rst:108
-msgid ":s:`F11` - Hide / show **Main** view"
-msgstr ":s:`F11` - Скрыть / показать **главное** окно"
-
-#: ../../features.rst:110
-msgid ":s:`F12` - Hide / show **Console** view"
-msgstr ":s:`F12` - Скрыть / показать **консольное** окно"
-
-#: ../../features.rst:112
+#: ../../features.rst:122
 msgid ":s:`Ctrl` + :s:`L` - Clear console"
 msgstr ":s:`Ctrl` + :s:`L` - Очистить консоль"
 
-#: ../../features.rst:114
-msgid ":s:`Ctrl` + :s:`S` - Save all settings"
-msgstr ":s:`Ctrl` + :s:`S` - Сохранить все настройки"
-
-#: ../../features.rst:116
+#: ../../features.rst:130
 msgid "Command input field:"
 msgstr "Ввод AT-команд:"
 
-#: ../../features.rst:118
+#: ../../features.rst:132
 msgid ":s:`Return` - Send command"
 msgstr ":s:`Return` - Послать команду"
 
-#: ../../features.rst:120
+#: ../../features.rst:134
 msgid ""
 ":s:`Ctrl` + :s:`Z` - Send data in download mode (substitute character at the"
 " end)"
@@ -226,63 +214,121 @@ msgstr ""
 ":s:`Ctrl` + :s:`Z` - Послать данные для загрузки (символ substutite в конце "
 "строки)"
 
-#: ../../features.rst:122
+#: ../../features.rst:136
 msgid "Window focus:"
 msgstr "Навигация внутри окна:"
 
-#: ../../features.rst:124
+#: ../../features.rst:140
 msgid ":s:`Ctrl` + :s:`F` - Focus search field"
 msgstr ":s:`Ctrl` + :s:`F` - Перейти на поле поиска"
 
-#: ../../features.rst:139
+#: ../../features.rst:159
 msgid "Development"
 msgstr "Разработка"
 
-#: ../../features.rst:143
+#: ../../features.rst:163
 msgid "Clean code base and architecture"
 msgstr "Чистая кодовая база и архитектура"
 
-#: ../../features.rst:144
+#: ../../features.rst:164
 msgid "Minimal dependencies"
 msgstr "Минимальные зависимости"
 
-#: ../../features.rst:145
+#: ../../features.rst:165
 msgid ""
 "Threading: all the work done in the background thread, UI does not freeze"
-msgstr "Мультипоточность: вся работа совершается в фоне, графический интерфейс не тормозит"
+msgstr ""
+"Мультипоточность: вся работа совершается в фоне, графический интерфейс не "
+"тормозит"
 
-#: ../../features.rst:146
+#: ../../features.rst:166
 msgid "Separate classes do separate work"
 msgstr "Разные классы делают распределённую работу"
 
-#: ../../features.rst:147
+#: ../../features.rst:167
 msgid "Constructive comments for most code blocks"
 msgstr "Конструктивные комментарии для большинства блоков кода"
 
-#: ../../features.rst:148
+#: ../../features.rst:168
 msgid "Code enclosed in #regions for clarity"
 msgstr "Части кода закрыты в блоках региона #regions для удобства"
 
-#: ../../features.rst:126
+#: ../../features.rst:142
 msgid ":s:`Alt` + :s:`1` - switch to 1st **Connection** tab"
 msgstr ":s:`Alt` + :s:`1` - переключиться на 1ую вкладку **Соединение**"
 
-#: ../../features.rst:128
+#: ../../features.rst:144
 msgid ":s:`Alt` + :s:`2` - switch to 2nd **Queue** tab"
 msgstr ":s:`Alt` + :s:`2` - переключиться на 2ую вкладку **Очередь**"
 
-#: ../../features.rst:130
+#: ../../features.rst:146
 msgid ":s:`Alt` + :s:`3` - switch to 3rd **Settings** tab"
 msgstr ":s:`Alt` + :s:`3` - переключиться на 3ю вкладку **Настройки**"
 
-#: ../../features.rst:132
+#: ../../features.rst:148
 msgid ":s:`Alt` + :s:`4` - switch to 4th **Information** tab"
 msgstr ":s:`Alt` + :s:`4` - переключиться на 4ую вкладку **Информация**"
 
-#: ../../features.rst:134
+#: ../../features.rst:150
 msgid ":s:`Alt` + :s:`5` - switch to 5th **Automatic** tab"
-msgstr ":s:`Alt` + :s:`5` - переключиться на 5ую вкладку **Автоматический режим**"
+msgstr ""
+":s:`Alt` + :s:`5` - переключиться на 5ую вкладку **Автоматический режим**"
 
-#: ../../features.rst:136
+#: ../../features.rst:152
 msgid ":s:`Alt` + :s:`6` - switch to 6th **Configuration** tab"
 msgstr ":s:`Alt` + :s:`6` - переключиться на 6ую вкладку **Конфигурация**"
+
+#: ../../features.rst:108
+msgid ""
+":s:`F1` - PDF documentation will be opened if present, otherwise the website"
+" will be shown"
+msgstr ":s:`F1` - PDF документация (при наличии), иначе - вебсайт"
+
+#: ../../features.rst:110
+msgid ""
+":s:`Ctrl` + :s:`F1` - Show Machine ID: needed for license check (full "
+"version unlock)"
+msgstr ":s:`Ctrl` + :s:`F1` - Прочитать ID текущей машины (ПК): необходимо для проверки лицензии (разблокировки полной версии)"
+
+#: ../../features.rst:112
+msgid ":s:`F5` - Update (fill) modem information"
+msgstr ":s:`F5` - Обновить (прочитать) информацию о модеме"
+
+#: ../../features.rst:114
+msgid ":s:`F6` - Update (fill) modem configuration"
+msgstr ":s:`F6` - Обновить (прочитать) конфигурацию приложения"
+
+#: ../../features.rst:116
+msgid ":s:`F9` - Store current modem in XML database of installed modems"
+msgstr ":s:`F9` - Записать текущие настройки модема в XML-базу установленных модемов"
+
+#: ../../features.rst:118
+msgid ":s:`F11` - Hide / show **Console** view"
+msgstr ":s:`F11` - Скрыть / показать **Консольное** окно"
+
+#: ../../features.rst:120
+msgid ":s:`F12` - Hide / show **Main** view"
+msgstr ":s:`F12` - Скрыть / показать **Главное** окно"
+
+#: ../../features.rst:124
+msgid ""
+":s:`Ctrl` + :s:`S` - Save all settings, includes current APN configuration"
+msgstr ":s:`Ctrl` + :s:`S` - Сохранить все настройки, включая текущую APN-конфигурацию"
+
+#: ../../features.rst:126
+msgid ""
+":s:`Ctrl` + :s:`M` - RAW console mode (full screen COM monitor), could be "
+"used with Detach mode (right click -> Detach)"
+msgstr ":s:`Ctrl` + :s:`M` - режим полноэкранного монитора COM-порта, может быть совмещён с режимом Отделения окна (ПКМ -> Вынести в отдельное окно)"
+
+#: ../../features.rst:128
+msgid ":s:`Ctrl` + :s:`Space` - Pause/Resume queue"
+msgstr ":s:`Ctrl` + :s:`Space` - Приостановить/Возобновить очередь"
+
+#: ../../features.rst:138
+msgid ":s:`Ctrl` + :s:`I` - Focus AT command input field"
+msgstr ":s:`Ctrl` + :s:`I` - Переключиться на поле ввода AT-команд"
+
+#: ../../features.rst:156
+msgid "For switching tabs you can use :s:`Ctrl` as well."
+msgstr "Для переключения вкладок также можно использовать клавишу :s:`Ctrl`"

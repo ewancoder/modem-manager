@@ -105,13 +105,27 @@ Keyboard shortcuts
 
 Global:
 
-:s:`F11` - Hide / show **Main** view
+:s:`F1` - PDF documentation will be opened if present, otherwise the website will be shown
 
-:s:`F12` - Hide / show **Console** view
+:s:`Ctrl` + :s:`F1` - Show Machine ID: needed for license check (full version unlock)
+
+:s:`F5` - Update (fill) modem information
+
+:s:`F6` - Update (fill) modem configuration
+
+:s:`F9` - Store current modem in XML database of installed modems
+
+:s:`F11` - Hide / show **Console** view
+
+:s:`F12` - Hide / show **Main** view
 
 :s:`Ctrl` + :s:`L` - Clear console
 
-:s:`Ctrl` + :s:`S` - Save all settings
+:s:`Ctrl` + :s:`S` - Save all settings, includes current APN configuration
+
+:s:`Ctrl` + :s:`M` - RAW console mode (full screen COM monitor), could be used with Detach mode (right click -> Detach)
+
+:s:`Ctrl` + :s:`Space` - Pause/Resume queue
 
 Command input field:
 
@@ -120,6 +134,8 @@ Command input field:
 :s:`Ctrl` + :s:`Z` - Send data in download mode (substitute character at the end)
 
 Window focus:
+
+:s:`Ctrl` + :s:`I` - Focus AT command input field
 
 :s:`Ctrl` + :s:`F` - Focus search field
 
@@ -134,6 +150,10 @@ Window focus:
 :s:`Alt` + :s:`5` - switch to 5th **Automatic** tab
 
 :s:`Alt` + :s:`6` - switch to 6th **Configuration** tab
+
+.. note::
+
+   For switching tabs you can use :s:`Ctrl` as well.
 
 Development
 -----------
