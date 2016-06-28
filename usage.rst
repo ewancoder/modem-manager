@@ -189,6 +189,208 @@ Configuring application only works if you have our application inside your modem
 
 :i:`6` button configures all on-screen configuration into modem.
 
+Reference manual
+~~~~~~~~~~~~~~~~
+
+
++-------------------------+-------------------------------------------------------------------+
+|  GPRS VPN Configuration |                                                                   |
++=========================+===================================================================+
+| Primary SIM card        |                                                                   |
++=========================+===================================================================+
+| APN                     | Setup Access Point Name for primary SIM card                      |
++-------------------------+-------------------------------------------------------------------+
+| User                    | Setup APN User for primary SIM card                               |
++-------------------------+-------------------------------------------------------------------+
+| Password                | Setup APN Password for primary SIM card                           |
++-------------------------+-------------------------------------------------------------------+
+| Secondary SIM card      |                                                                   |
++=========================+===================================================================+
+| APN                     | Setup Access Point Name for secondary SIM card                    |
++-------------------------+-------------------------------------------------------------------+
+| User                    | Setup APN User for secondary SIM card                             |
++-------------------------+-------------------------------------------------------------------+
+| Password                | Setup APN Password for secondary SIM card                         |
++-------------------------+-------------------------------------------------------------------+
+| Enable                  | Check Box, allows secondary SIM card usage |
++-------------------------+-------------------------------------------------------------------+
+
+
+
++----------------------+------------------------------------------------------------------------------------------------------+
+| IEC104 configuration |                                                                                                      |
++======================+======================================================================================================+
+| ASDU Address         | Application Service Data Unit address. Denotes separate segments and their addresses inside a device |
+|                      |                                                                                                      |
+|                      |                                                                                                      |
++----------------------+------------------------------------------------------------------------------------------------------+
+| t0                   | Reserved                                                                                             |
++----------------------+------------------------------------------------------------------------------------------------------+
+| t1                   | Time to wait for acknowledge (“ACK”) to a transmitted APDU. If this time expires, the master         |
+|                      | assumes data has been lost and attempts to retransmit. The default settings is 15 s.                 |
+|                      |                                                                                                      |
++----------------------+------------------------------------------------------------------------------------------------------+
+| t2                   | Time to wait before sending a supervisory APDU ACK. Increasing this setting can reduce               |
+|                      | bandwidth required for acknowledging. The default settings is 10 ms.                                 |
+|                      |                                                                                                      |
++----------------------+------------------------------------------------------------------------------------------------------+
+| t3                   | Idle time before sending TEST APDU. This is used by a 104 device to detect device connectivity.      |
+|                      | The default settings is 20 s.                                                                        |
+|                      |                                                                                                      |
++----------------------+------------------------------------------------------------------------------------------------------+
+| Maximum K            | Maximum unacknowledged transmitted APDUs. The master does not send more APDUs if the maximum         |
+|                      | number of ADPUs have been transmitted and have not been acknowledged. The default settings is 12.    |
+|                      |                                                                                                      |
++----------------------+------------------------------------------------------------------------------------------------------+
+| Maximum W            | Maximum unacknowledged received APDUs. This setting works in conjunction with T2 to limit how        |
+|                      | often the master acknowledges APDUs. Increasing this setting can reduce bandwidth required for       |
+|                      | acknowledging. The default settings is 8.                                                            |
+|                      |                                                                                                      |
++----------------------+------------------------------------------------------------------------------------------------------+
+
+
+
+
++----------------------+---------------------------------------------------------+
+| Serial Configuration |                                                         |
++======================+=========================================================+
+| Baud Rate            | Setup Port Speed                                        |
++----------------------+---------------------------------------------------------+
+| Data Bits            | Dropdown menu, sets Serial Frame Data Length            |
++----------------------+---------------------------------------------------------+
+| Stop Bits            | Dropdown menu, sets Serial Frame Stop Bits              |
++----------------------+---------------------------------------------------------+
+| Parity Type          | Dropdown menu, sets Serial Frame Parity Type            |
++----------------------+---------------------------------------------------------+
+| RTS                  | Check Box, sets usage of RTS serial flow control signal |
++----------------------+---------------------------------------------------------+
+| CTS                  | Check Box, sets usage of CTS serial flow control signal |
++----------------------+---------------------------------------------------------+
+
+
+
+
++-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Power management                        |                                                                                                                                                                                                    |
++=========================================+====================================================================================================================================================================================================+
+| Power mode                              | Dropdown menu, sets power management mode                                                                                                                                                          |
+|                                         | - *none* - no power management used.                                                                                                                                                               |
+|                                         | - *sleep*  - simple power management algorithm: power up - measure - transfer data if possible - power down                                                                                        |
+|                                         | - *timetable* - complex power management algorithm: calculate time table of data transfer permitted periods, independent power-ups with measure cycle, data transferring only at allowed intervals |
++-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Power up interval (minutes)             | Used in *sleep*  and *timetable* modes, sets power up intervals.                                                                                                                                   |
++-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Power time table start (hours, minutes) | Used in *timetable* mode, sets start time of calculated timetable, input in two fields if 24h format.                                                                                              |
++-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Power time table interval (minutes)     | Used in *timetable* mode, sets interval between data transfer allowed windows.                                                                                                                     |
++-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Power connection allowed  (minutes)     | Used in *timetable* mode, sets length of data transfer allowed windows.                                                                                                                            |
++-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------+----------------------------------------------------------------------------------------+
+| PLC                              |                                                                                        |
++==================================+========================================================================================+
+| PLC Type                         | Drop menu, sets data source device type                                                |
+|                                  | - *SetPoint* - connected 4..20 mA analog sensor.                                       |
+|                                  | - *Alpha PLC* - connected with alpha-series PLC module.                                |
+|                                  | - *FX PLC* - connected with FX2 of FX3 series PLC module                               |
+|                                  | - *modbus* - connected with connected to modbus network as master                      |
+|                                  | Choosing options opens appropriate configuration sections below.                       |
++----------------------------------+----------------------------------------------------------------------------------------+
+| PLC timers                       |                                                                                        |
++==================================+========================================================================================+
+| Scan timer                       | Sets Data Polling period, in 0.1s units                                                |
++----------------------------------+----------------------------------------------------------------------------------------+
+| Send to UART period              | Sets delay Between Serial Data Requests, in 0.02s units                                |
++==================================+========================================================================================+
+| Dimensions                       |                                                                                        |
++==================================+========================================================================================+
+| Maxnum stations                  | Sets number of PLC devices in network. 1 for FX PLC, 1 or 2 for Alpha PLC.             |
+|                                  | Ignored in SetPoint and Modbus modes.                                                  |
++----------------------------------+----------------------------------------------------------------------------------------+
+| Bit Registers number             | Set number of Bits, read from single FX PLC or every Alpha PLC                         |
+|                                  | Ignored in SetPoint and Modbus modes.                                                  |
++----------------------------------+----------------------------------------------------------------------------------------+
+| Word Registers number            | Set number of WORD registers, read from FX PLC or every Alpha PLC                      |
+|                                  | Ignored in SetPoint and Modbus modes.                                                  |
++==================================+========================================================================================+
+| External hardware watchdog timer |                                                                                        |
++==================================+========================================================================================+
+| Address                          | Setup address of special watchdog counter PLC register. Will be set as 0 every Period. |
+|                                  | Ignored in SetPoint mode.                                                              |
++----------------------------------+----------------------------------------------------------------------------------------+
+| Period                           | Setup External Hardware Watchdog reset period. Set's in second units.                  |
++----------------------------------+----------------------------------------------------------------------------------------+
+| Enabled                          | Check Box, setups usage of External Hardware Watchdog mechanism.                       |
++----------------------------------+----------------------------------------------------------------------------------------+
+
+
+
+
++-------------------+-----------------------------------------------------------------------------------------------+
+| FX PLC            |                                                                                               |
++===================+===============================================================================================+
+| Read Buffer Size  | Setup quantity of data units, read per request. Default value is 28                           |
++-------------------+-----------------------------------------------------------------------------------------------+
+| MCM read address  | M-registers (BIT) block start read address. Number stored in *Bit Registers number* option    |
++-------------------+-----------------------------------------------------------------------------------------------+
+| MCM write address | M-registers (BIT) block start write address. Number stored in *Bit Registers number* option   |
++-------------------+-----------------------------------------------------------------------------------------------+
+| MCD read address  | D-registers (WORD) block start read address. Number stored in *Word Registers number* option  |
++-------------------+-----------------------------------------------------------------------------------------------+
+| MCD write address | D-registers (WORD) block start write address. Number stored in *Word Registers number* option |
++-------------------+-----------------------------------------------------------------------------------------------+
+
+
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| Modbus                        |                                                                                                                              |
++===============================+==============================================================================================================================+
+| Read buffer size              | Configure quantity of data units per request. Deprecated.                                                                    |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| Coil Read Start Address       | Configure start address for COIL registers in modbus device #1. Quantity pf COILS is stored in *Bit Registers number* option |
++===============================+==============================================================================================================================+
+| Holding Read Address and Size |                                                                                                                              |
++===============================+==============================================================================================================================+
+| Block 1 .. 5                  | Rows describes parameters for 5 modbus requests for periodic polling of HOLDING registers.                                   |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| Device Address                | Setups modbus network device address.                                                                                        |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| Start Address                 | Setups Start HOLDING register in data block.                                                                                 |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| Size                          | Setups Holding registers quantity. If 0  - this request will be ignored.                                                     |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+
+
+
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Configure Analog Inputs |                                                                                                                                                                           |
++=========================+===========================================================================================================================================================================+
+| Address                 | Analog (WORD) register index number.                                                                                                                                      |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Upper limit             | Event generation control value. If current and previous register values difference will be more than this limit, event will be generated.                                 |
+|                         | Using for detecting unexpected fast changes of register value. Default value is 1.                                                                                        |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Lower limit             | Event generation control value. If current and previous register values difference will be less, than this limit, even if Time event occurs, event will not be generated. |
+|                         | Using for noise reduction. Default value is 0.                                                                                                                            |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Period                  | Event generation control value. Time out from last generated event. If it expires, new event will be generated.                                                           |
+|                         | Default value is 60 seconds.                                                                                                                                              |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+
+
+
++--------------------------+-----------------------------------------------------------------------------------------------------------------+
+| Configure Digital Inputs |                                                                                                                 |
++==========================+=================================================================================================================+
+| Address                  | Bit (BIT) register index number.                                                                                |
++--------------------------+-----------------------------------------------------------------------------------------------------------------+
+| Period                   | Event generation control value. Time out from last generated event. If it expires, new event will be generated. |
++--------------------------+-----------------------------------------------------------------------------------------------------------------+
+
+
 .. _troubleshooting:
 
 Troubleshooting
