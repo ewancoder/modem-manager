@@ -169,6 +169,14 @@ Configuring application only works if you have our application inside your modem
 
    .. image:: Screens/Configuration2-ru.png
 
+.. ifconfig:: language == 'en'
+
+   .. image:: Screens/Configuration3.png
+
+.. ifconfig:: language == 'ru'
+
+   .. image:: Screens/Configuration3-ru.png
+
 :i:`1` button fills information from modem.
 
 :i:`2` button fills information from XML config file. You can get such file with predefined settings and just load whole configuration from it.
@@ -177,9 +185,9 @@ Configuring application only works if you have our application inside your modem
 
 :i:`4` button resets default configuration which is defined by the version of application you are using.
 
-:i:`5` button configures all on-screen configuration into modem.
+:i:`5` button toggles all blocks for configuration. You can toggle single block by clicking on it while holding CTRL key.
 
-Reference manual for sections :i:`6` - :i:`13` will be added in future.
+:i:`6` button configures all on-screen configuration into modem.
 
 .. _troubleshooting:
 
