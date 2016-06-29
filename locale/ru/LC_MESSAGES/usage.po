@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Modem Manager 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-29 14:07+0300\n"
+"POT-Creation-Date: 2016-06-29 14:08+0300\n"
 "PO-Revision-Date: 2015-09-13 21:48+0300\n"
 "Last-Translator: Ivan Zyrianov <ewancoder@gmail.com>\n"
 "Language-Team: Technikon <skb@technikon.by>\n"
@@ -401,11 +401,11 @@ msgstr ""
 "Конфигурирование (настройка) приложения (прошивки) модема работает только"
 " если эта прошивка присутствует на модеме (что очевидно)."
 
-#: ../../usage.rst:172
+#: ../../usage.rst:180
 msgid ":i:`1` button fills information from modem."
 msgstr ":i:`1` - заполнить информацию из модема."
 
-#: ../../usage.rst:174
+#: ../../usage.rst:182
 msgid ""
 ":i:`2` button fills information from XML config file. You can get such "
 "file with predefined settings and just load whole configuration from it."
@@ -414,7 +414,7 @@ msgstr ""
 " настройками под Вашу конфигурацию и просто загрузить всю конфигурацию из"
 " него."
 
-#: ../../usage.rst:176
+#: ../../usage.rst:184
 msgid ""
 ":i:`3` button saves current on-screen configuration into XML file for "
 "future use."
@@ -422,7 +422,7 @@ msgstr ""
 ":i:`3` - сохранить текущую конфигурацию с экрана в XML файл для "
 "дальнейшего использования."
 
-#: ../../usage.rst:178
+#: ../../usage.rst:186
 msgid ""
 ":i:`4` button resets default configuration which is defined by the "
 "version of application you are using."
@@ -430,25 +430,26 @@ msgstr ""
 ":i:`4` - сбросить конфигурацию на стандартную (определяется версией "
 "приложения, прошитого в модеме)."
 
-#: ../../usage.rst:180
-msgid ":i:`5` button configures all on-screen configuration into modem."
-msgstr ":i:`5` - конфигурирование модема по заданным на экране правилам."
+#: ../../usage.rst:188
+msgid ""
+":i:`5` button toggles all blocks for configuration. You can toggle single"
+" block by clicking on it while holding CTRL key."
+msgstr ":i:`5` - включить/выключить конфигурирование всех блоков. Вы можете переключить статус вкл./выкл. отдельного блока путём клика по нему с зажатой клавишей CTRL."
 
-#: ../../usage.rst:182
-msgid "Reference manual for sections :i:`6` - :i:`13` will be added in future."
-msgstr ""
-"Подробное руководство по секциям :i:`6` - :i:`13` будет добавлено в "
-"будущем."
+#: ../../usage.rst:190
+#, fuzzy
+msgid ":i:`6` button configures all on-screen configuration into modem."
+msgstr ":i:`6` - конфигурирование модема по заданным на экране правилам."
 
-#: ../../usage.rst:187
+#: ../../usage.rst:195
 msgid "Troubleshooting"
 msgstr "Проблемы и их решение"
 
-#: ../../usage.rst:190
+#: ../../usage.rst:198
 msgid "Error occurs when trying updating from cloud"
 msgstr "При попытке обновления из облака возникает ошибка"
 
-#: ../../usage.rst:192
+#: ../../usage.rst:200
 msgid ""
 "If error occurred before ``at+wdss=1,1`` command is executed, it most "
 "likely happened because you have no SIM card installed. Please, check "
@@ -460,7 +461,7 @@ msgstr ""
 "работоспособность sim-карты, а также надёжное интернет-соединение "
 "(правильный APN)."
 
-#: ../../usage.rst:194
+#: ../../usage.rst:202
 msgid ""
 "Also, make sure that your modem is patched (see :ref:`preparation`). You "
 "should click \"Prepare empty modem\" at least once per each new modem."
@@ -469,11 +470,11 @@ msgstr ""
 "пропатчен (см. :ref:`preparation`). APN должен быть настроен как минимум "
 "1 раз."
 
-#: ../../usage.rst:197
+#: ../../usage.rst:205
 msgid "Program stopped working and port has disappeared"
 msgstr "Программа перестала работать и порт исчез"
 
-#: ../../usage.rst:199
+#: ../../usage.rst:207
 msgid ""
 "This is presumably Sierra Wireless USB driver problem. You will most "
 "likely need to reboot your PC to be able to see port again."
@@ -482,7 +483,7 @@ msgstr ""
 "Скорее всего, вам понадобится перезагрузить компьютер для того чтобы порт"
 " снова появился в системе."
 
-#: ../../usage.rst:201
+#: ../../usage.rst:209
 msgid ""
 "If this error happened when you already set up configuration in the "
 "**\"Configuration\"** tab, you can simply save whole configuration into "
@@ -491,4 +492,3 @@ msgstr ""
 "Если проблема возникла во время конфигурации (вкладка "
 "**\"Конфигурация\"**), Вы можете сохранить текущую конфигурацию в XML "
 "файл, перезапустить программу и загрузить конфигурацию из XML файла."
-
