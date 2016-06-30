@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Modem Manager 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-29 14:08+0300\n"
+"POT-Creation-Date: 2016-06-30 14:09+0300\n"
 "PO-Revision-Date: 2015-09-13 21:48+0300\n"
 "Last-Translator: Ivan Zyrianov <ewancoder@gmail.com>\n"
 "Language-Team: Technikon <skb@technikon.by>\n"
@@ -18,7 +18,7 @@ msgstr "Руководство пользователя"
 
 #: ../../usage.rst
 msgid "Contents"
-msgstr ""
+msgstr "Содержание"
 
 #: ../../usage.rst:10
 msgid "Starting communication"
@@ -434,22 +434,536 @@ msgstr ""
 msgid ""
 ":i:`5` button toggles all blocks for configuration. You can toggle single"
 " block by clicking on it while holding CTRL key."
-msgstr ":i:`5` - включить/выключить конфигурирование всех блоков. Вы можете переключить статус вкл./выкл. отдельного блока путём клика по нему с зажатой клавишей CTRL."
+msgstr ""
+":i:`5` - включить/выключить конфигурирование всех блоков. Вы можете "
+"переключить статус вкл./выкл. отдельного блока путём клика по нему с "
+"зажатой клавишей CTRL."
 
 #: ../../usage.rst:190
 #, fuzzy
 msgid ":i:`6` button configures all on-screen configuration into modem."
 msgstr ":i:`6` - конфигурирование модема по заданным на экране правилам."
 
-#: ../../usage.rst:195
+#: ../../usage.rst:193
+msgid "Reference manual"
+msgstr "Справочное руководство"
+
+#: ../../usage.rst:197
+#, fuzzy
+msgid "GPRS VPN Configuration"
+msgstr "Конфигурирование приложения модема"
+
+#: ../../usage.rst:199
+msgid "Primary SIM card"
+msgstr "Основная SIM-карта"
+
+#: ../../usage.rst:201 ../../usage.rst:209
+msgid "APN"
+msgstr "APN"
+
+#: ../../usage.rst:201
+msgid "Setup Access Point Name for primary SIM card"
+msgstr "Настройка точки доступа для основной SIM-карты"
+
+#: ../../usage.rst:203 ../../usage.rst:211
+msgid "User"
+msgstr "Пользователь"
+
+#: ../../usage.rst:203
+msgid "Setup APN User for primary SIM card"
+msgstr "Настройка пользователя APN для основной SIM-карты"
+
+#: ../../usage.rst:205 ../../usage.rst:213
+msgid "Password"
+msgstr "Пароль"
+
+#: ../../usage.rst:205
+msgid "Setup APN Password for primary SIM card"
+msgstr "Настройка пароля APN для основной SIM-карты"
+
+#: ../../usage.rst:207
+msgid "Secondary SIM card"
+msgstr "Дополнительная SIM-карта"
+
+#: ../../usage.rst:209
+msgid "Setup Access Point Name for secondary SIM card"
+msgstr "Настройка точки доступа для дополнительной SIM-карты"
+
+#: ../../usage.rst:211
+msgid "Setup APN User for secondary SIM card"
+msgstr "Настройка пользователя APN для дополнительной SIM-карты"
+
+#: ../../usage.rst:213
+msgid "Setup APN Password for secondary SIM card"
+msgstr "Настройка пароля APN для дополнительной SIM-карты"
+
+#: ../../usage.rst:215
+msgid "Enable"
+msgstr "Использовать"
+
+#: ../../usage.rst:215
+msgid "Check Box, allows secondary SIM card usage"
+msgstr "Флажок, включает использование дополнительной SIM-карты"
+
+#: ../../usage.rst:221
+#, fuzzy
+msgid "IEC104 configuration"
+msgstr "Конфигурирование приложения модема"
+
+#: ../../usage.rst:223
+msgid "ASDU Address"
+msgstr "Адрес ASDU"
+
+#: ../../usage.rst:223
+msgid ""
+"Application Service Data Unit address. Denotes separate segments and "
+"their addresses inside a device"
+msgstr "Адрес Application Service Data Unit. Отмечает отдельные сегменты и их адресов внутри устройства."
+
+#: ../../usage.rst:227
+msgid "t0"
+msgstr "t0"
+
+#: ../../usage.rst:227
+msgid "Reserved"
+msgstr "Зарезервировано"
+
+#: ../../usage.rst:229
+msgid "t1"
+msgstr "t1"
+
+#: ../../usage.rst:229
+msgid ""
+"Time to wait for acknowledge (“ACK”) to a transmitted APDU. If this time "
+"expires, the master assumes data has been lost and attempts to "
+"retransmit. The default settings is 15 s."
+msgstr ""
+
+#: ../../usage.rst:233
+msgid "t2"
+msgstr ""
+
+#: ../../usage.rst:233
+msgid ""
+"Time to wait before sending a supervisory APDU ACK. Increasing this "
+"setting can reduce bandwidth required for acknowledging. The default "
+"settings is 10 ms."
+msgstr ""
+
+#: ../../usage.rst:237
+msgid "t3"
+msgstr ""
+
+#: ../../usage.rst:237
+msgid ""
+"Idle time before sending TEST APDU. This is used by a 104 device to "
+"detect device connectivity. The default settings is 20 s."
+msgstr ""
+
+#: ../../usage.rst:241
+msgid "Maximum K"
+msgstr "Максимальный K"
+
+#: ../../usage.rst:241
+msgid ""
+"Maximum unacknowledged transmitted APDUs. The master does not send more "
+"APDUs if the maximum number of ADPUs have been transmitted and have not "
+"been acknowledged. The default settings is 12."
+msgstr ""
+
+#: ../../usage.rst:245
+msgid "Maximum W"
+msgstr "Максимальный W"
+
+#: ../../usage.rst:245
+msgid ""
+"Maximum unacknowledged received APDUs. This setting works in conjunction "
+"with T2 to limit how often the master acknowledges APDUs. Increasing this"
+" setting can reduce bandwidth required for acknowledging. The default "
+"settings is 8."
+msgstr ""
+
+#: ../../usage.rst:255
+#, fuzzy
+msgid "Serial Configuration"
+msgstr "Конфигурирование приложения модема"
+
+#: ../../usage.rst:257
+msgid "Baud Rate"
+msgstr "Скорость передачи"
+
+#: ../../usage.rst:257
+msgid "Setup Port Speed"
+msgstr "Настройка скорости порта"
+
+#: ../../usage.rst:259
+msgid "Data Bits"
+msgstr "Количество бит данных"
+
+#: ../../usage.rst:259
+msgid "Dropdown menu, sets Serial Frame Data Length"
+msgstr "Выпадающее меню, настраивает количество бит данных последовательного порта"
+
+#: ../../usage.rst:261
+msgid "Stop Bits"
+msgstr "Количество конечных бит"
+
+#: ../../usage.rst:261
+msgid "Dropdown menu, sets Serial Frame Stop Bits"
+msgstr "Выпадающее меню, настраивает количество стоповых бит последовательного порта"
+
+#: ../../usage.rst:263
+msgid "Parity Type"
+msgstr "Тип чётности"
+
+#: ../../usage.rst:263
+msgid "Dropdown menu, sets Serial Frame Parity Type"
+msgstr "Выпадающее меню, настраивает тип чётности последовательного порта"
+
+#: ../../usage.rst:265
+msgid "RTS"
+msgstr "RTS"
+
+#: ../../usage.rst:265
+msgid "Check Box, sets usage of RTS serial flow control signal"
+msgstr "Флажок, настраивает использование RTS-сигнала"
+
+#: ../../usage.rst:267
+msgid "CTS"
+msgstr "CTS"
+
+#: ../../usage.rst:267
+msgid "Check Box, sets usage of CTS serial flow control signal"
+msgstr "Флажок, настраивает использование CTS-сигнала"
+
+#: ../../usage.rst:274
+msgid "Power management"
+msgstr "Управления питанием"
+
+#: ../../usage.rst:276
+msgid "Power mode"
+msgstr "Режим управления питанием"
+
+#: ../../usage.rst:276
+msgid ""
+"Dropdown menu, sets power management mode - *none* - no power management "
+"used. - *sleep*  - simple power management algorithm: power up - measure "
+"- transfer data if possible - power down - *timetable* - complex power "
+"management algorithm: calculate time table of data transfer permitted "
+"periods, independent power-ups with measure cycle, data transferring only"
+" at allowed intervals"
+msgstr "Выпадающее меню, настраивает управление питанием - *none* - управление питанием не используется. - *sleep* - простой алгоритм управления питанием: включение - измерение - передача данных если возможно - выключение - *timetable* - сложный алгоритм управления питанием: Расчет временной таблицы разрешённых периодов передачи, независимые включения с циклом измерений, передача данных только в разрешённых интервалах"
+
+#: ../../usage.rst:281
+msgid "Power up interval (minutes)"
+msgstr "Интервал между включениями (минуты)"
+
+#: ../../usage.rst:281
+msgid "Used in *sleep*  and *timetable* modes, sets power up intervals."
+msgstr "Используется в режимах *sleep* и *timetable*, настраивает интервалы включения."
+
+#: ../../usage.rst:283
+msgid "Power time table start (hours, minutes)"
+msgstr "Начало расписания (часы, минуты)"
+
+#: ../../usage.rst:283
+msgid ""
+"Used in *timetable* mode, sets start time of calculated timetable, input "
+"in two fields if 24h format."
+msgstr "Используется в режиме *timetable*, настраивает начальное время расчётной таблицы времени, ввод в два поля при 24-часовом формате"
+
+#: ../../usage.rst:285
+msgid "Power time table interval (minutes)"
+msgstr "Интервал расписания (минуты)"
+
+#: ../../usage.rst:285
+msgid ""
+"Used in *timetable* mode, sets interval between data transfer allowed "
+"windows."
+msgstr "Используется в режиме *timetable*, настраивает интервал между разрешёнными передачами данных"
+
+#: ../../usage.rst:287
+msgid "Power connection allowed  (minutes)"
+msgstr "Время разрешённых соединений (минуты)"
+
+#: ../../usage.rst:287
+msgid "Used in *timetable* mode, sets length of data transfer allowed windows."
+msgstr "Используется в режиме *timetable*, настраивает размер разрешённых окон передачи данных"
+
+#: ../../usage.rst:292
+msgid "PLC"
+msgstr "ПЛК"
+
+#: ../../usage.rst:294
+msgid "PLC Type"
+msgstr "Тип ПЛК"
+
+#: ../../usage.rst:294
+msgid ""
+"Drop menu, sets data source device type - *SetPoint* - connected 4..20 mA"
+" analog sensor. - *Alpha PLC* - connected with alpha-series PLC module. -"
+" *FX PLC* - connected with FX2 of FX3 series PLC module - *modbus* - "
+"connected with connected to modbus network as master Choosing options "
+"opens appropriate configuration sections below."
+msgstr "Выпадающее меню, настраивает тип устройства источника данных - *Диктующая точка* - соединена с 4..20 мА аналоговым датчиком. - *Альфа ПЛК* - соединён с Альфа-серией ПЛК. - *FX ПЛК* - соединён с FX2 или FX3 серией модулей ПЛК - *Modbus* - соединён с modbus-сетью как мастер Выбор опций открывает подходящую конфигурационную секцию ниже."
+
+#: ../../usage.rst:301
+msgid "PLC timers"
+msgstr "Таймеры ПЛК"
+
+#: ../../usage.rst:303
+msgid "Scan timer"
+msgstr "Таймер скана"
+
+#: ../../usage.rst:303
+msgid "Sets Data Polling period, in 0.1s units"
+msgstr "Настраивает период опроса данных, в 0.1с единицах"
+
+#: ../../usage.rst:305
+msgid "Send to UART period"
+msgstr "Период отправки в UART"
+
+#: ../../usage.rst:305
+msgid "Sets delay Between Serial Data Requests, in 0.02s units"
+msgstr "Настраивает задержку между запросами данных последовательного порта, в 0.02с единицах"
+
+#: ../../usage.rst:307
+msgid "Dimensions"
+msgstr "Размеры"
+
+#: ../../usage.rst:309
+msgid "Maxnum stations"
+msgstr "Количество станций"
+
+#: ../../usage.rst:309
+msgid ""
+"Sets number of PLC devices in network. 1 for FX PLC, 1 or 2 for Alpha "
+"PLC. Ignored in SetPoint and Modbus modes."
+msgstr "Настраивает количество ПЛК в сети. 1 для FX, 1 или 2 для Альфа ПЛК. Игнорируется в режимах диктующей точки и Modbus."
+
+#: ../../usage.rst:312
+msgid "Bit Registers number"
+msgstr "Кол-во битовых регистров"
+
+#: ../../usage.rst:312
+msgid ""
+"Set number of Bits, read from single FX PLC or every Alpha PLC Ignored in"
+" SetPoint and Modbus modes."
+msgstr "Настраивает количество бит, читаемых из одного FX-ПЛК или из каждого Альфа-ПЛК. Игнорируется в режимах диктующей точки и Modbus."
+
+#: ../../usage.rst:315
+msgid "Word Registers number"
+msgstr "Количество 16-битных регистров"
+
+#: ../../usage.rst:315
+msgid ""
+"Set number of WORD registers, read from FX PLC or every Alpha PLC Ignored"
+" in SetPoint and Modbus modes."
+msgstr "Настраивает количество 16-битных регистров, читаемых из FX-ПЛК или из каждого Альфа-ПЛК. Игнорируется в режимах диктующей точки и Modbus."
+
+#: ../../usage.rst:318
+msgid "External hardware watchdog timer"
+msgstr "Внешний аппаратный сторожевой таймер"
+
+#: ../../usage.rst:320 ../../usage.rst:369 ../../usage.rst:388
+msgid "Address"
+msgstr "Адрес"
+
+#: ../../usage.rst:320
+msgid ""
+"Setup address of special watchdog counter PLC register. Will be set as 0 "
+"every Period. Ignored in SetPoint mode."
+msgstr "Настройка ардеса специального сторожевого счётчика в регистре ПЛК. Будет установлен в 0 в каждом периоде. Игнорируется в режиме диктующей точки."
+
+#: ../../usage.rst:323 ../../usage.rst:377 ../../usage.rst:390
+msgid "Period"
+msgstr "Период"
+
+#: ../../usage.rst:323
+msgid "Setup External Hardware Watchdog reset period. Set's in second units."
+msgstr "Настраивает период сброса внешнего аппаратного сторожевого таймера. Устанавливается в секундах."
+
+#: ../../usage.rst:325
+msgid "Enabled"
+msgstr "Использовать"
+
+#: ../../usage.rst:325
+msgid "Check Box, setups usage of External Hardware Watchdog mechanism."
+msgstr "Флажок, настраивает использование внешнего аппаратного сторожевого механизма."
+
+#: ../../usage.rst:332
+msgid "FX PLC"
+msgstr "FX ПЛК"
+
+#: ../../usage.rst:334
+msgid "Read Buffer Size"
+msgstr "Размер буфера чтения"
+
+#: ../../usage.rst:334
+msgid "Setup quantity of data units, read per request. Default value is 28"
+msgstr "Настраивает количество единиц данных читаемых за запрос. Стандартное значение - 28"
+
+#: ../../usage.rst:336
+msgid "MCM read address"
+msgstr "MCM адрес чтения"
+
+#: ../../usage.rst:336
+msgid ""
+"M-registers (BIT) block start read address. Number stored in *Bit "
+"Registers number* option"
+msgstr "Стартовый адрес чтения M-регистров (БИТ)"
+
+#: ../../usage.rst:338
+msgid "MCM write address"
+msgstr "MCM адрес записи"
+
+#: ../../usage.rst:338
+msgid ""
+"M-registers (BIT) block start write address. Number stored in *Bit "
+"Registers number* option"
+msgstr "Стартовый адрес записи M-регистров (БИТ)"
+
+#: ../../usage.rst:340
+msgid "MCD read address"
+msgstr "MCD адрес чтения"
+
+#: ../../usage.rst:340
+msgid ""
+"D-registers (WORD) block start read address. Number stored in *Word "
+"Registers number* option"
+msgstr "Стартовый адрес чтения D-регистров (WORD, 16-бит)"
+
+#: ../../usage.rst:342
+msgid "MCD write address"
+msgstr "MCD write address"
+
+#: ../../usage.rst:342
+msgid ""
+"D-registers (WORD) block start write address. Number stored in *Word "
+"Registers number* option"
+msgstr "Стартовый адрес записи D-регистров (WORD, 16-бит)"
+
+#: ../../usage.rst:347
+msgid "Modbus"
+msgstr "Modbus"
+
+#: ../../usage.rst:349
+msgid "Read buffer size"
+msgstr "Размер буфера чтения"
+
+#: ../../usage.rst:349
+msgid "Configure quantity of data units per request. Deprecated."
+msgstr "Настраивает количество единиц данных за запрос. Параметр устарел."
+
+#: ../../usage.rst:351
+msgid "Coil Read Start Address"
+msgstr "Стартовый адрес чтения [coil]"
+
+#: ../../usage.rst:351
+msgid ""
+"Configure start address for COIL registers in modbus device #1. Quantity "
+"pf COILS is stored in *Bit Registers number* option"
+msgstr "Настройка стартового адреса для регистров COIL в Modbus-устройстве #1"
+
+#: ../../usage.rst:353
+msgid "Holding Read Address and Size"
+msgstr "Адрес и размер чтения [Holding]"
+
+#: ../../usage.rst:355
+msgid "Block 1 .. 5"
+msgstr "Блоки 1 .. 5"
+
+#: ../../usage.rst:355
+msgid ""
+"Rows describes parameters for 5 modbus requests for periodic polling of "
+"HOLDING registers."
+msgstr "Строки описывают параметры для 5 Modbus-запросов периодически опрашивающих HOLDING-регистры"
+
+#: ../../usage.rst:357
+msgid "Device Address"
+msgstr "Адрес устройства"
+
+#: ../../usage.rst:357
+msgid "Setups modbus network device address."
+msgstr "Настраивает сетевой адрес Modbus-устройства"
+
+#: ../../usage.rst:359
+msgid "Start Address"
+msgstr "Стартовый адрес"
+
+#: ../../usage.rst:359
+msgid "Setups Start HOLDING register in data block."
+msgstr "Настраивает стартовый HOLDING-регистр в блоке данных"
+
+#: ../../usage.rst:361
+msgid "Size"
+msgstr "Размер"
+
+#: ../../usage.rst:361
+msgid "Setups Holding registers quantity. If 0  - this request will be ignored."
+msgstr "Настраивает количество Holding-регистров. Если 0 - запрос будет проигнорирован."
+
+#: ../../usage.rst:367
+msgid "Configure Analog Inputs"
+msgstr "Конфигурация аналоговых входов"
+
+#: ../../usage.rst:369
+msgid "Analog (WORD) register index number."
+msgstr "Номер индекса аналогового (WORD, 16-bit) регистра."
+
+#: ../../usage.rst:371
+msgid "Upper limit"
+msgstr "Верхний предел"
+
+#: ../../usage.rst:371
+msgid ""
+"Event generation control value. If current and previous register values "
+"difference will be more than this limit, event will be generated. Using "
+"for detecting unexpected fast changes of register value. Default value is"
+" 1."
+msgstr "Событие регистрации контроллируемой величины. Если разница между текущим и предыдущим зарегистрированными значенями будет больше, чем этот предел, событие будет зарегистрировано. Используется для определения неожиданных быстрых изменений регистрируемой величины. Стандартное значение - 1."
+
+#: ../../usage.rst:374
+msgid "Lower limit"
+msgstr "Нижний предел"
+
+#: ../../usage.rst:374
+msgid ""
+"Event generation control value. If current and previous register values "
+"difference will be less, than this limit, even if Time event occurs, "
+"event will not be generated. Using for noise reduction. Default value is "
+"0."
+msgstr "Событие регистрации контроллируемой величины. Если разница между текущим и предыдущим зарегистрированными значенями будет меньше, чем этот предел, событие будет зарегистрировано. Используется для снижения шумов. Стандартное значение - 1."
+
+#: ../../usage.rst:377
+msgid ""
+"Event generation control value. Time out from last generated event. If it"
+" expires, new event will be generated. Default value is 60 seconds."
+msgstr "Собитие регистрации сонтроллируемой величины. Таймаут с последнего зарегистрированного события. Если таймаут истекает, новое событие будет зарегистрировано. Стандартное значение - 60 секунд."
+
+#: ../../usage.rst:386
+msgid "Configure Digital Inputs"
+msgstr "Конфигурация цифровых входов"
+
+#: ../../usage.rst:388
+msgid "Bit (BIT) register index number."
+msgstr "Номер индекса битового (БИТ) регистра"
+
+#: ../../usage.rst:390
+msgid ""
+"Event generation control value. Time out from last generated event. If it"
+" expires, new event will be generated."
+msgstr "Событие регистрации контроллируемой величины. Таймаут с последнего зарегистрированного события. Если таймаут истекает, новое событие будет зарегистрировано."
+
+#: ../../usage.rst:397
 msgid "Troubleshooting"
 msgstr "Проблемы и их решение"
 
-#: ../../usage.rst:198
+#: ../../usage.rst:400
 msgid "Error occurs when trying updating from cloud"
 msgstr "При попытке обновления из облака возникает ошибка"
 
-#: ../../usage.rst:200
+#: ../../usage.rst:402
 msgid ""
 "If error occurred before ``at+wdss=1,1`` command is executed, it most "
 "likely happened because you have no SIM card installed. Please, check "
@@ -461,7 +975,7 @@ msgstr ""
 "работоспособность sim-карты, а также надёжное интернет-соединение "
 "(правильный APN)."
 
-#: ../../usage.rst:202
+#: ../../usage.rst:404
 msgid ""
 "Also, make sure that your modem is patched (see :ref:`preparation`). You "
 "should click \"Prepare empty modem\" at least once per each new modem."
@@ -470,11 +984,11 @@ msgstr ""
 "пропатчен (см. :ref:`preparation`). APN должен быть настроен как минимум "
 "1 раз."
 
-#: ../../usage.rst:205
+#: ../../usage.rst:407
 msgid "Program stopped working and port has disappeared"
 msgstr "Программа перестала работать и порт исчез"
 
-#: ../../usage.rst:207
+#: ../../usage.rst:409
 msgid ""
 "This is presumably Sierra Wireless USB driver problem. You will most "
 "likely need to reboot your PC to be able to see port again."
@@ -483,7 +997,7 @@ msgstr ""
 "Скорее всего, вам понадобится перезагрузить компьютер для того чтобы порт"
 " снова появился в системе."
 
-#: ../../usage.rst:209
+#: ../../usage.rst:411
 msgid ""
 "If this error happened when you already set up configuration in the "
 "**\"Configuration\"** tab, you can simply save whole configuration into "
@@ -492,3 +1006,4 @@ msgstr ""
 "Если проблема возникла во время конфигурации (вкладка "
 "**\"Конфигурация\"**), Вы можете сохранить текущую конфигурацию в XML "
 "файл, перезапустить программу и загрузить конфигурацию из XML файла."
+
